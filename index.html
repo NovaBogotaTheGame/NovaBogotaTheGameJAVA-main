@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta
+      name="Home"
+      content="our first interactive multimedia narrative"
+    />
+    <link
+      id="favicon"
+      rel="icon"
+      href="assets/images/prota.png"
+      type="image/x-icon"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="index.css"
+    />
+    <script
+      src="./script.js"
+      defer
+    ></script>
+  </head>
+
+  <body class="index-page">
+    <header class="hero-header">
+      <h1>NOVA BOGOTÁ</h1>
+    </header>
+<audio id="audio-home-credits" src="assets/sounds/home-credits.wav" preload="auto" autoplay playsinline></audio>
+    <nav class="bottom-nav">
+      <div class="nav-center">
+        <button class="nav-button" onclick="window.location.href = 'Tutorial.html'">Tutorial</button>
+        <button class="nav-button play-button" onclick="window.location.href = 'Interacción 1.html'">Jugar</button>
+        <button class="nav-button" onclick="window.location.href = 'Extra 1.html'">Conoce tu mundo</button>
+      </div>
+      <button class="nav-button credits-button" onclick="window.location.href = 'CRÉDITOS.html'">Créditos</button>
+    </nav>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "Amoria";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Amoria"),
+       url("assets/fonts/AMORIA.otf") format("opentype");
+}
+
+.creditos-page {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Amoria", sans-serif;
+  background-image: url("assets/images/home.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  position: relative;
+}
+
+.creditos-page * {
+  font-family: "Amoria", sans-serif;
+}
+
+.creditos-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/*.creditos-page .hero-header {
+  padding: 5.5rem 1.5rem 2.5rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+
+.creditos-page h1 {
+  font-family: "Amoria", sans-serif;
+  font-size: clamp(3.2rem, 8vw, 6rem);
+  line-height: 1.05;
+  margin: 0;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}*/
+
+.creditos-page .creditos-content {
+  width: min(100%, 1040px);
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  background: rgba(0, 0, 0, 0.28);
+  border-radius: 24px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.creditos-page .creditos-content h2,
+.creditos-page .creditos-content h3,
+.creditos-page .creditos-content h4,
+.creditos-page .creditos-content h5,
+.creditos-page .creditos-content h6,
+.creditos-page .creditos-content p,
+.creditos-page .bottom-nav,
+.creditos-page .nav-button,
+.creditos-page .hero-header,
+.creditos-page h1 {
+  font-family: "Amoria", sans-serif;
+}
+
+.creditos-page .creditos-content h2,
+.creditos-page .creditos-content h3,
+.creditos-page .creditos-content h4,
+.creditos-page .creditos-content h5,
+.creditos-page .creditos-content h6 {
+  margin: 1rem 0 0.4rem;
+  letter-spacing: 0.04em;
+}
+
+.creditos-page .creditos-content p {
+  margin: 0 0 1rem;
+  line-height: 1.8;
+  color: #f3f1e8;
+}
+
+.creditos-page .bottom-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.22);
+  z-index: 1;
+}
+
+.creditos-page .nav-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 170px;
+  padding: 0.9rem 1.4rem;
+  border-radius: 999px;
+  background: #f1c40f;
+  color: #222;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.creditos-page .nav-button:hover,
+.creditos-page .nav-button:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+}

@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "Amoria";
+  /*   font-weight: bold; */
+  /* src: local ("Blair Caps"); */
+  src: url("assets/fonts/AMORIA.otf") format("opentype");
+}
+
+/* ------Éste estilo aplica para todos los body de todas las html del proyecto---- */
+
+.index-page {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Amoria", sans-serif;
+  background-image: url("assets/images/home.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #173668;
+  position: relative;
+}
+
+.index-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.index-page .hero-header {
+  padding: 5.5rem 1.5rem 2.5rem;
+  text-align: center;
+  background: #f1c40f;
+  z-index: 1;
+}
+
+.index-page h1 {
+  font-family: "Amoria", sans-serif;
+  font-size: clamp(3.2rem, 8vw, 6rem);
+  line-height: 1.05;
+  margin: 0;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.index-page .bottom-nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.22);
+}
+
+.nav-center {
+  display: flex;
+  gap: 1rem;
+}
+
+.play-button {
+  font-size: 1.25em;
+  padding: 1.2rem 2rem;
+  min-width: 240px;
+}
+
+.credits-button {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+
+.index-page .nav-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 170px;
+  padding: 0.9rem 1.4rem;
+  border-radius: 20px;
+  background: #f1c40f;
+  color: #222;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.index-page .nav-button:hover,
+.index-page .nav-button:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+}
