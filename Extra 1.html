@@ -1,43 +1,133 @@
-<!doctype html>
+  <!doctype html>
 <html lang="en">
-  <head>
-    <title>Home</title>
-    <meta
-      name="description"
-      content="our first interactive multimedia narrative"
-    />
-    <link
-      id="favicon"
-      rel="icon"
-      href="https://glitch.com/edit/favicon-app.ico"
-      type="image/x-icon"
-    />
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link
-      rel="stylesheet"
-      href="
-style.css"
-    />
-    <script
-      src=".
-/script.js"
-      defer
-    ></script>
-  </head>
-  <h1>NOVA BOGOTÁ</h1>
+<head>
+  <title>Home</title>
 
-  <body>
-      <img src="assets/images/fondo vagon.jpeg" alt="" />
-  
-  <p>
-        El Tren Hipersónico se convierte en sistema de transporte público debido al alto costo del sistema de teletransporte masivo. 
-  </p>
+  <meta
+    name="description"
+    content="our first interactive multimedia narrative"
+  />
 
-<button onclick="window.location.href = 'Extra2.html'">Quiero saber más</button>
-  <button onclick="window.location.href = 'index.html'">Entendido</button>
-      
-  </body>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<body
+  style="
+    margin:0;
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    position:relative;
+    font-family:Times New Roman, serif;
+  "
+>
+
+  <!-- IMAGEN DE FONDO -->
+  <img
+    src="assets/images/fondo vagon.jpeg"
+    alt=""
+    style="
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      z-index:-1;
+    "
+  />
+
+  <!-- TÍTULO -->
+  <h1
+    style="
+      position:absolute;
+      top:20px;
+      left:20px;
+      color:white;
+      font-size:48px;
+      margin:0;
+      text-shadow:2px 2px 4px black;
+    "
+  >
+    NOVA BOGOTÁ
+  </h1>
+
+  <!-- CAJA INFERIOR -->
+  <div
+    style="
+      position:absolute;
+      bottom:0;
+      left:0;
+      width:100%;
+      background:#e4c84f;
+      padding:25px;
+      box-sizing:border-box;
+
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:30px;
+    "
+  >
+
+    <!-- TEXTO -->
+    <div
+      style="
+        width:70%;
+        color:black;
+        font-size:22px;
+        line-height:1.8;
+      "
+    >
+      El tren hipersónico se convierte en sistema de transporte público 
+      debido al alto costo del sistema de teletransporte masivo.
+    </div>
+
+    <!-- BOTONES -->
+    <div
+      style="
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+      "
+    >
+
+      <button
+        onclick="window.location.href='Extra6.html'"
+        style="
+          background:#123f93;
+          color:#ffe25f;
+          border:none;
+          padding:10px 20px;
+          font-size:18px;
+          cursor:pointer;
+        "
+      >
+        Quiero saber más
+      </button>
+
+      <button
+        onclick="window.location.href='index.html'"
+        style="
+          background:#123f93;
+          color:#ffe25f;
+          border:none;
+          padding:10px 20px;
+          font-size:18px;
+          cursor:pointer;
+        "
+      >
+        Entendido
+      </button>
+
+    </div>
+
+  </div>
+
+</body>
+
 </html>
