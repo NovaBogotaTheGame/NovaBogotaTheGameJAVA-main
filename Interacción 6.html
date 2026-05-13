@@ -9,7 +9,7 @@
     <link
       id="favicon"
       rel="icon"
-      href="https://glitch.com/edit/favicon-app.ico"
+      href="assets/images/policia.png"
       type="image/x-icon"
     />
     <meta charset="utf-8" />
@@ -29,20 +29,148 @@ style.css"
   </head>
 
   <body>
+
+   <body
+  style="
+    margin:0;
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    position:relative;
+    font-family:Times New Roman, serif;
+    display:flex;
+    flex-direction:column;
+  "
+>
   <img src="assets/images/fondo vagon.jpeg" alt="" />
-  <img src="assets/images/policia.png" alt="" />
-  <img src="assets/images/historiador.png" alt="" />
-  <img src="assets/images/periodico.png" alt="" />
+
+    <img src="assets/images/prota.png" alt=""
+      style="
+      width:auto;
+      height:auto;
+      max-height:50%;
+      object-fit:contain;
+      z-index:1;
+      flex-shrink:0;
+    "/>
+  <img src="assets/images/policia.png" alt="" 
+      style="
+      width:auto;
+      height:auto;
+      max-height:50%;
+      object-fit:contain;
+      z-index:1;
+      flex-shrink:0;
+      "/>
+  <img src="assets/images/historiador.png" alt="" 
+      style="
+      width:auto;
+      height:auto;
+      max-height:50%;
+      object-fit:contain;
+      z-index:1;
+      flex-shrink:0;
+      "/>
+  <img src="assets/images/periodico.png" alt="" 
+      style="
+      width:auto;
+      height:auto;
+      max-height:50%;
+      object-fit:contain;
+      z-index:1;
+      flex-shrink:0;
+      "/>
+
+           
+       <div
+    style="
+      position:absolute;
+      bottom:0;
+      left:0;
+      width:100%;
+      background:#e4c84f;
+      padding:25px;
+      box-sizing:border-box;
+
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:30px;
+    "
+  >
+
+    <!-- TEXTO -->
+    <div
+      style="
+        width:70%;
+        color:black;
+        font-size:22px;
+        font-family: Asar;
+        line-height:1.8;
+      "
+    >
   
-    <p>
          Aunque no tienes totalmente claro lo que está pasando, definitivitamente no puedes dejar a Saimon a su suerte. <br> Tomas el valor para contrariar
           al Orangután y no entregarle el periódico. <br>
 <br> El Orangután,  firme y contundente, amenaza de, que no retractarte, también tomará las mismas medidas contigo..
-    </p> 
+  </div> 
 
-  <button onclick="window.location.href = 'Final SE QUEDA VIAJANDO EN EL METRO.html'">Rendirse</button>
-<button onclick="window.location.href = 'Final ARRESTO.html'">Preguntar</button>
-<button onclick="window.location.href = 'Interacción 7.html'">Sacar el mp3</button>
+        <div
+      style="
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+      "
+    >
+
+      <button
+        onclick="window.location.href='Final SE QUEDA VIAJANDO EN EL METRO.html'"
+        style="
+          background:#123f93;
+          color:#ffe25f;
+          border:none;
+          padding:10px 20px;
+          font-size:18px;
+          font-family: Asar;
+          cursor:pointer;
+        "
+      >
+        Retractarte
+      </button>
+
+      <button
+        onclick="window.location.href='Final ARRESTO.html'"
+        style="
+          background:#123f93;
+          color:#ffe25f;
+          border:none;
+          padding:10px 20px;
+          font-size:18px;
+          font-family: Asar;
+          cursor:pointer;
+        "
+      >
+        Preguntar qué está pasando 
+      </button>
+
+      <button
+        onclick="window.location.href='Interacción 7.html'"
+        style="
+          background:#123f93;
+          color:#ffe25f;
+          border:none;
+          padding:10px 20px;
+          font-size:18px;
+          font-family: Asar;
+          cursor:pointer;
+        "
+      >
+        Continuar apoyando a Saimon y provocar al Orangután
+      </button>
+
+    </div>
+
+  </div>
       
   </body>
 </html>

@@ -30,15 +30,132 @@ style.css"
 
   <body>
 
-  <img src="assets/images/fondo vagon.jpeg" alt="" />
+    <body
+  style="
+    margin:0;
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    position:relative;
+    font-family:Times New Roman, serif;
+    display:flex;
+    flex-direction:column;
+  "
+>
+
+
+  <img src="assets/images/fondo vagon.jpeg" alt=""   alt=""
+    style="
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      z-index:-1;
+    "/>
+
+    <img src="assets/images/prota.png" alt=""
+    style="
+      width:auto;
+      height:auto;
+      max-height:50%;
+      object-fit:contain;
+      z-index:1;
+      flex-shrink:0;
+    "/>
+
+    <div
+    style="
+      position:absolute;
+      bottom:0;
+      left:0;
+      width:100%;
+      background:#e4c84f;
+      padding:25px;
+      box-sizing:border-box;
+
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:30px;
+    "
+  >
+
+    <!-- TEXTO -->
+    <div
+      style="
+        width:70%;
+        color:black;
+        font-size:22px;
+        font-family: Asar;
+        line-height:1.8;
+      "
+    >
   
-    <p>
       "Otra vez aquí..." piensas para tus adentros. Eres una estudiante de sexto semestre de Historia, pero siempre tuviste un presentimiento <br> de que nunca te contaron todo; que algo faltaba, que no todo estaba bien, que era demasiado increíble para ser verdad. <br>
       Pero eso en este momento no importaba, te vas a subir al metro, por amor a Dios.   
-    </p> 
-<button onclick="window.location.href = 'Interacción 2.html'">Hablar con él</button>
-    <button onclick="window.location.href = 'Extra 4.html'">Reportarlo a la policía</button>
-  <button onclick="window.location.href = 'Final NO SALE DE CASA Y REPRUEBA CLASES.html'">Ignorarlo</button>
+    </div>
+
+       <div
+      style="
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+      "
+    >
+
+      <button
+        onclick="window.location.href='Interacción 2.html'"
+        style="
+          background:#123f93;
+          color:#ffe25f;
+          border:none;
+          padding:10px 20px;
+          font-size:18px;
+          font-family: Asar;
+          cursor:pointer;
+          border-radius: 30%;
+        "
+      >
+        Explorar el vagón
+      </button>
+
+      <button
+        onclick="window.location.href='Extra 1.html'"
+        style="
+          background:#123f93;
+          color:#ffe25f;
+          border:none;
+          padding:10px 20px;
+          font-size:18px;
+          font-family: Asar;
+          cursor:pointer;
+          border-radius: 30%;
+        "
+      >
+        ¿Qué es el metro?
+      </button>
+
+      <button
+        onclick="window.location.href='Final NO SALE DE CASA Y REPRUEBA CLASES.html'"
+        style="
+          background:#123f93;
+          color:#ffe25f;
+          border:none;
+          padding:10px 20px;
+          font-size:18px;
+          font-family: Asar;
+          cursor:pointer;
+          border-radius: 30%;         
+        "
+      >
+        Te desvías de camino y vuelves a tu casa
+      </button>
+
+    </div>
+
+  </div>
 
   </body>
 </html>

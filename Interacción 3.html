@@ -7,7 +7,7 @@
     <link
       id="favicon"
       rel="icon"
-      href="https://glitch.com/edit/favicon-app.ico"
+      href="assets/images/prota.png"
       type="image/x-icon"
     />
     <meta charset="utf-8" />
@@ -26,20 +26,149 @@ style.css"
   </head>
 
   <body>
-  <img src="assets/images/fondo vagon.jpeg" alt="" />
-  <img src="assets/images/historiador.png" alt="" />
-  
-    <p>
+
+    <body
+  style="
+    margin:0;
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    position:relative;
+    font-family:Times New Roman, serif;
+  "
+>
+
+  <img src="assets/images/fondo vagon.jpeg" alt="" 
+    style="
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      z-index:-1;
+    "/>
+
+  <img src="assets/images/prota.png" alt=""
+    style="
+      position:absolute;
+      bottom:110px;
+      left:0;
+      width:auto;
+      height:auto;
+      max-height:40%;
+      object-fit:contain;
+      z-index:1;
+      pointer-events:none;
+    "/>
+
+  <img src="assets/images/historiador.png" alt="" 
+    style="
+      position:absolute;
+      bottom:110px;
+      right:0;
+      width:auto;
+      height:auto;
+      max-height:40%;
+      object-fit:contain;
+      z-index:1;
+      pointer-events:none;
+    "/>
+
+        <div
+    style="
+      position:absolute;
+      bottom:0;
+      left:0;
+      width:100%;
+      background:#e4c84f;
+      padding:25px;
+      box-sizing:border-box;
+
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:30px;
+    "
+  >
+
+    <!-- TEXTO -->
+    <div
+      style="
+        width:70%;
+        color:black;
+        font-size:22px;
+        font-family: Asar;
+        line-height:1.8;
+      "
+    >
+
          "¿Un objeto extraño? Esos pensamientos ridículos eran lo de menos. Con un <br> suspiro,
           das un paso hacia adelante y el tren se comienza a mover. Sentado br a unos pasos de 
           ti, reconoces a un profesor de tu <br> facultad. Era Saimon, conocido como “el Historiador: era muy
-       brillante. A pesar de sus ideas algo radicales... <br Tu sabes que su forma de pensar puede llevar
-        problemas, sobretodo si te involucras de más. No obstante, se empieza a acercar a tí."
-    </p> 
+       brillante. A pesar de sus ideas algo radicales... <br> Tu sabes que su forma de pensar puede llevar
+        problemas, sobretodo si te involucras de más. No obstante, se empieza a acercar a tí.
+  </div> 
 
-<button onclick="window.location.href = 'Interacción 4.html'">Hablar con él</button>
- <button onclick="window.location.href = 'Final ARRESTO.html'">Reportarlo a la policía</button>
- <button onclick="window.location.href = 'Final ARRESTO.html'">Ignorarlo</button>
+        <div
+      style="
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+      "
+    >
+
+      <button
+        onclick="window.location.href='Interacción 4.html'"
+        style="
+          background:#123f93;
+          color:#ffe25f;
+          border:none;
+          padding:10px 20px;
+          font-size:18px;
+          font-family: Asar;
+          cursor:pointer;
+          border-radius: 30%;          
+        "
+      >
+        Ignorarlo
+      </button>
+
+      <button
+        onclick="window.location.href='Final ARRESTO.html'"
+        style="
+          background:#123f93;
+          color:#ffe25f;
+          border:none;
+          padding:10px 20px;
+          font-size:18px;
+          font-family: Asar;
+          cursor:pointer;
+          border-radius: 30%;         
+        "
+      >
+        Conversar con él
+      </button>
+
+      <button
+        onclick="window.location.href='Final ARRESTO.html'"
+        style="
+          background:#123f93;
+          color:#ffe25f;
+          border:none;
+          padding:10px 20px;
+          font-size:18px;
+          font-family: Asar;
+          cursor:pointer;
+          border-radius: 30%;          
+        "
+      >
+        Sigues explorando los vagones
+      </button>
+
+    </div>
+
+  </div>
   </body>
 </html>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             

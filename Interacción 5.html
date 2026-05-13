@@ -9,7 +9,7 @@
     <link
       id="favicon"
       rel="icon"
-      href="https://glitch.com/edit/favicon-app.ico"
+      href="assets/images/policia.png"
       type="image/x-icon"
     />
     <meta charset="utf-8" />
@@ -29,18 +29,134 @@ style.css"
   </head>
 
   <body>
+
+  <body
+  style="
+    margin:0;
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    position:relative;
+    font-family:Times New Roman, serif;
+    display:flex;
+    flex-direction:column;
+  "
+>
+
   <img src="assets/images/fondo vagon.jpeg" alt="" />
-  <img src="assets/images/policia.png" alt="" />
-  
-    <p>
+
+  <img src="assets/images/prota.png" alt=""
+    style="
+      width:auto;
+      height:auto;
+      max-height:50%;
+      object-fit:contain;
+      z-index:1;
+      flex-shrink:0;
+    "/>
+  <img src="assets/images/policia.png" alt="" 
+        style="
+      width:auto;
+      height:auto;
+      max-height:50%;
+      object-fit:contain;
+      z-index:1;
+      flex-shrink:0;
+      "/>
+
+      
+       <div
+    style="
+      position:absolute;
+      bottom:0;
+      left:0;
+      width:100%;
+      background:#e4c84f;
+      padding:25px;
+      box-sizing:border-box;
+
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:30px;
+    "
+  >
+
+    <!-- TEXTO -->
+    <div
+      style="
+        width:70%;
+        color:black;
+        font-size:22px;
+        font-family: Asar;
+        line-height:1.8;
+      "
+    >
          El más supremo polícia de la seguridad nacional, conocido como “El Orangután”, estaba siguiendo a Saimon.
          <br> “¡Es sospechoso de pensamiento
           en contra de la Nueva Constitución de 3010”. (:0)
  Al parecer, el periódico y <br> el pequeño dispositivo forman parte de un conjunto de patrañas conspiranóicas de la convivencia ciudadana
-    </p> 
-<button onclick="window.location.href = 'Interacción 6.html'">Defender a Saimon</button>
-<button onclick="window.location.href = 'Final SE QUEDA VIAJANDO EN EL METRO.html'">Seguir las instrucciones del Orangután”</button>
-<button onclick="window.location.href = 'Final ARRESTO.html'">Confrontar al policía</button>
+  </div> 
+
+        <div
+      style="
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+      "
+    >
+
+      <button
+        onclick="window.location.href='Interacción 6.html'"
+        style="
+          background:#123f93;
+          color:#ffe25f;
+          border:none;
+          padding:10px 20px;
+          font-size:18px;
+          font-family: Asar;
+          cursor:pointer;
+          border-radius: 30%;         
+        "
+      >
+        Defender a Saimon
+      </button>
+
+      <button
+        onclick="window.location.href='Final SE QUEDA VIAJANDO EN EL METRO.html'"
+        style="
+          background:#123f93;
+          color:#ffe25f;
+          border:none;
+          padding:10px 20px;
+          font-size:18px;
+          font-family: Asar;
+          cursor:pointer;
+          border-radius: 30%;          
+        "
+      >
+        Obedecer al Orangután
+      </button>
+
+      <button
+        onclick="window.location.href='Final ARRESTO.html'"
+        style="
+          background:#123f93;
+          color:#ffe25f;
+          border:none;
+          padding:10px 20px;
+          font-size:18px;
+          font-family: Asar;
+          cursor:pointer;
+          border-radius: 30%;          
+        "
+      >
+        Confrontar al policía
+      </button>
+
+    </div>
+
+  </div>
       
   </body>
 </html>
