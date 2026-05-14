@@ -1,7 +1,5 @@
 @font-face {
   font-family: "Amoria";
-  /*   font-weight: bold; */
-  /* src: local ("Blair Caps"); */
   src: url("assets/fonts/AMORIA.otf") format("opentype");
 }
 
@@ -11,7 +9,10 @@
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: "Amoria", sans-serif; background-image: url("assets/images/home.jpeg"); background-color: grey;;
+  /* font-family: "Amoria", sans-serif; */
+  font-family: "Comic Sans MS", "Com", Times, serif;
+  background-image: url("assets/images/home.jpeg");
+  background-color: grey;
   background-size: contain;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -45,7 +46,8 @@
 }
 
 .index-page h1 {
-  font-family: "Amoria", sans-serif;
+  /* font-family: "Amoria", sans-serif; */
+  font-family: "Comic Sans MS", "Com", Times, serif;
   font-size: clamp(3.2rem, 8vw, 6rem);
   line-height: 1.05;
   margin: 0;
@@ -81,6 +83,10 @@
 }
 
 .index-page .nav-button {
+  /* font-family:
+    comic sans ms,
+    comic,
+    cursive; */
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -92,7 +98,9 @@
   text-decoration: none;
   font-weight: 700;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .index-page .nav-button:hover,
