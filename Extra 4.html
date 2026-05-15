@@ -29,11 +29,111 @@ style.css"
   </head>
 
   <body>
-    <h1>NOVA BOGOTÁ</h1>
-    <p>El índice de criminalidad en Nova Bogotá, finalmente alcanza <br>
-       la cifra de 0% anual. La educación florece, y el pensamiento <br>
-        delictivo es inexistente.</p>
-    <button onclick="window.location.href = 'Extra 5.html'">Quiero saber más</button>
-    <button onclick="window.location.href = 'index.html'">Entiendo</button>
-  </body>
+    
+
+  <!-- IMAGEN DE FONDO -->
+  <img
+    src="assets/images/extra 4.jpg.jpeg"
+    alt=""
+    style="
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      object-fit:contain;
+      z-index:-1;
+      background:rgb#222;
+    "
+  />
+
+  <!-- TÍTULO -->
+  <h1
+    style="
+      position:absolute;
+      top:20px;
+      left:20px;
+      color:white;
+      font-size:48px;
+      margin:0;
+      text-shadow:2px 2px 4px black;
+    "
+  >
+    NOVA BOGOTÁ
+  </h1>
+
+  <!-- CAJA INFERIOR -->
+  <div
+    style="
+      position:absolute;
+      bottom:0;
+      left:0;
+      width:100%;
+      background:#e4c84f;
+      padding:25px;
+      box-sizing:border-box;
+
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:30px;
+    "
+  >
+
+    <!-- TEXTO -->
+    <div
+      style="
+        width:70%;
+        color:black;
+        font-size:22px;
+        line-height:1.8;
+      "
+    >
+      El índice de criminalidad en Nova Bogotá, finalmente alcanza la cifra de 0% anual.<br>
+      La educación florece, y el pensamiento delictivo es inexistente.
+    </div>
+
+    <!-- BOTONES -->
+    <div
+      style="
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+      "
+    >
+
+      <button
+        onclick="window.location.href='Extra 4.html'"
+        style="
+          background:#123f93;
+          color:#ffe25f;
+          border:none;
+          padding:10px 20px;
+          font-size:18px;
+          cursor:pointer;
+        "
+      >
+        Quiero saber más
+      </button>
+
+      <button
+        onclick="window.location.href='index.html'"
+        style="
+          background:#123f93;
+          color:#ffe25f;
+          border:none;
+          padding:10px 20px;
+          font-size:18px;
+          cursor:pointer;
+        "
+      >
+        Entendido
+      </button>
+
+    </div>
+
+  </div>
+
+</body>
+
 </html>

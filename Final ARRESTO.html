@@ -2,49 +2,173 @@
 <html lang="en">
   <head>
     <title>Home</title>
+
     <meta
       name="description"
       content="our first interactive multimedia narrative"
     />
+
     <link
       id="favicon"
       rel="icon"
       href="https://glitch.com/edit/favicon-app.ico"
       type="image/x-icon"
     />
+
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link
       rel="stylesheet"
-      href="
-style.css"
+      href="style.css"
     />
+
     <script
-      src=".
-/script.js"
+      src="./script.js"
       defer
     ></script>
   </head>
 
-  <body>
-    <h1>NOVA BOGOTÁ</h1>
-    <img
-    src="assets/images/final carcel.jpeg"
-    alt=""
+  <body
     style="
-      position:absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-      object-fit:contain;
-      z-index:-1;
+      margin:0;
+      width:100vw;
+      height:100vh;
+      overflow:hidden;
+      position:relative;
+      font-family:Times New Roman, serif;
+      background:#d9d9d9;
     "
-img>
-    
- <button class="nav-button" onclick="window.location.href = 'index.html'">Entiendo</button>
-<audio id="audio-home-credits" src="assets/sounds/final arresto.wav" preload="auto" autoplay playsinline></audio>
+  >
+
+    <!-- BARRA SUPERIOR -->
+    <div
+      style="
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:35px;
+        background:#6f7473;
+        z-index:3;
+      "
+    ></div>
+
+    <!-- IMAGEN -->
+    <img
+      src="assets/images/final carcel.jpeg"
+      alt=""
+      style="
+        position:absolute;
+        top:35px;
+        left:0;
+        width:100%;
+        height:75%;
+        object-fit:cover;
+        z-index:-1;
+      "
+    />
+
+    <!-- TÍTULO -->
+    <div
+      style="
+        position:absolute;
+        top:35px;
+        left:0;
+        width:100%;
+        background:#e7860d;
+        text-align:center;
+        padding:28px 0;
+        z-index:2;
+      "
+    >
+      <h1
+        style="
+          margin:0;
+          color:black;
+          font-size:20px;
+          letter-spacing:2px;
+          font-weight:normal;
+        "
+      >
+        NOVA BOGOTÁ
+      </h1>
+    </div>
+
+    <!-- SUBTÍTULO NARANJA -->
+    <div
+      style="
+        position:absolute;
+        bottom:55px;
+        left:0;
+        width:100%;
+        background:#e7860d;
+        padding:18px 25px;
+        box-sizing:border-box;
+
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        gap:30px;
+      "
+    >
+
+      <!-- TEXTO -->
+      <div
+        style="
+          width:75%;
+          color:black;
+          font-size:20px;
+          line-height:1.8;
+        "
+      >
+        Vas a la carcel. Hablaste más de lo que debías o eres un total irrespetuoso.
+        Te desviaste demasiado de la norma.
+        Fuiste advertida de que esto iba a pasar,
+        y aún así decidiste pasarte de la raya.
+        Que lástima, habías progresado tanto...
+        Bueno, así es la vida.
+        Esto no es culpa de nadie más que tuya.
+      </div>
+
+      <!-- BOTÓN -->
+      <div
+        style="
+          display:flex;
+          flex-direction:column;
+          gap:12px;
+        "
+      >
+
+        <button
+          onclick="window.location.href='index.html'"
+          style="
+            background:#123f93;
+            color:#e7860d;
+;
+            border:none;
+            padding:8px 18px;
+            font-size:15px;
+            cursor:pointer;
+            border-radius:20px;
+          "
+        >
+          Entendido
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- AUDIO -->
+    <audio
+      id="audio-home-credits"
+      src="assets/sounds/final arresto.wav"
+      preload="auto"
+      autoplay
+      playsinline
+    ></audio>
+
   </body>
 </html>

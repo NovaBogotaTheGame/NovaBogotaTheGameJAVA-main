@@ -1,8 +1,8 @@
 @font-face {
-  font-family: "Amoria";
+  font-family: "MIDDLETO";
   /*   font-weight: bold; */
   /* src: local ("Blair Caps"); */
-  src: url("assets/fonts/AMORIA.otf") format("opentype");
+  src: url("assets/fonts/MIDDLETO.TTF") format("truetype");
 }
 
 /* ------Éste estilo aplica para todos los body de todas las html del proyecto---- */
@@ -11,7 +11,7 @@
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: "Amoria", sans-serif; background-image: url("assets/images/home.jpeg"); background-color: grey;;
+  font-family: "MIDDLETO", sans-serif; background-image: url("assets/images/home.jpeg"); background-color: grey;;
   background-size: contain;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -45,7 +45,7 @@
 }
 
 .index-page h1 {
-  font-family: "Amoria", sans-serif;
+  font-family: "MIDDLETO", sans-serif;
   font-size: clamp(3.2rem, 8vw, 6rem);
   line-height: 1.05;
   margin: 0;

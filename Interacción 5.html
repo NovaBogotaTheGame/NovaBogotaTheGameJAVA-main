@@ -1,162 +1,155 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Interacción 5</title>
-    <meta
-      name="description"
-      content="our first interactive multimedia narrative"
-    />
+    <title>Capítulo 5</title>
     <link
       id="favicon"
       rel="icon"
-      href="assets/images/policia.png"
+      href="assets/images/prota.png"
       type="image/x-icon"
     />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Asar&display=swap');
 
-    <link
-      rel="stylesheet"
-      href="
-style.css"
-    />
-    <script
-      src=".
-/script.js"
-      defer
-    ></script>
+
+      body, html {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .fondo-vagon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain; 
+        background-color: rgba(30, 30, 30, 0.925);
+        z-index: -1;
+      }
+
+.contenedor-imagenes {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-end;
+  gap: 5%;               
+  width: 100%;             
+  box-sizing: border-box;  
+  flex-grow: 1;          
+  padding-bottom: 0;   
+}
+
+.imagen {
+  width: calc(50% - 10px); 
+  max-width: 23%;        
+  height: auto;            
+  object-fit: contain;   
+  display: block;   
+}
+
+#prota {
+  max-width: 16%;
+}
+
+      .interaccion-container {
+  width: 100%;
+  background: #e4c94fec; 
+  padding: 30px 40px; /* Aumentamos el padding superior/inferior para dar más aire */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* ESTO centra verticalmente el texto y la columna de botones */
+  gap: 40px;
+  z-index: 10;
+  position: relative;
+  min-height: 25vh;
+      }
+
+      .texto-historia {
+  width: 65%; /* Bajamos un poco el ancho para que no choque con los botones */
+  color: #173668;
+  font-size: 28px;
+  font-family: 'Asar', serif;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+      }
+
+      .columna-botones {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Un poco más de espacio entre botones */
+  align-items: center; 
+  justify-content: center; /* Centra los botones dentro de su propia columna */
+  width: 30%;
+  margin: 0;
+      }
+
+      .boton-accion {
+        background: #123f93;
+        color: #ffe25f;
+        border: none;
+        padding: 8px 20px;
+        width: fit-content; 
+        font-size: 18px;
+        font-family: 'Amoria', sans-serif; 
+        cursor: pointer;
+        border-radius: 30px;
+        transition: transform 0.2s;
+        text-align: center;
+      }
+
+      .boton-accion:hover {
+        transform: scale(1.05);
+        background: #1a4eb3;
+      }
+    </style>
   </head>
 
   <body>
 
-  <body
-  style="
-    margin:0;
-    width:100vw;
-    height:100vh;
-    overflow:hidden;
-    position:relative;
-    font-family:Times New Roman, serif;
-    display:flex;
-    flex-direction:column;
-  "
->
 
-  <img src="assets/images/fondo vagon.jpeg" alt="" />
+    <img src="assets/images/fondo vagon.jpeg" class="fondo-vagon" alt="Fondo Vagón">
 
-  <img src="assets/images/prota.png" alt=""
-    style="
-      width:auto;
-      height:auto;
-      max-height:50%;
-      object-fit:contain;
-      z-index:1;
-      flex-shrink:0;
-    "/>
-  <img src="assets/images/policia.png" alt="" 
-        style="
-      width:auto;
-      height:auto;
-      max-height:50%;
-      object-fit:contain;
-      z-index:1;
-      flex-shrink:0;
-      "/>
+<div class="contenedor-imagenes">
 
-      
-       <div
-    style="
-      position:absolute;
-      bottom:0;
-      left:0;
-      width:100%;
-      background:#e4c84f;
-      padding:25px;
-      box-sizing:border-box;
+    <img src="assets/images/prota.png" class="imagen" id="prota" alt="Protagonista">
 
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:30px;
-    "
-  >
+    <img src="assets/images/policia.png" class="imagen" alt="Policia">
+    </div>
 
-    <!-- TEXTO -->
-    <div
-      style="
-        width:70%;
-        color:black;
-        font-size:22px;
-        font-family: Asar;
-        line-height:1.8;
-      "
-    >
-         El más supremo polícia de la seguridad nacional, conocido como “El Orangután”, estaba siguiendo a Saimon.
-         <br> “¡Es sospechoso de pensamiento
-          en contra de la Nueva Constitución de 3010”. (:0)
- Al parecer, el periódico y <br> el pequeño dispositivo forman parte de un conjunto de patrañas conspiranóicas de la convivencia ciudadana
-  </div> 
 
-        <div
-      style="
-        display:flex;
-        flex-direction:column;
-        gap:15px;
-      "
-    >
+    <div class="interaccion-container">
 
-      <button
-        onclick="window.location.href='Interacción 6.html'"
-        style="
-          background:#123f93;
-          color:#ffe25f;
-          border:none;
-          padding:10px 20px;
-          font-size:18px;
-          font-family: Asar;
-          cursor:pointer;
-          border-radius: 30%;         
-        "
-      >
-        Defender a Saimon
-      </button>
 
-      <button
-        onclick="window.location.href='Final SE QUEDA VIAJANDO EN EL METRO.html'"
-        style="
-          background:#123f93;
-          color:#ffe25f;
-          border:none;
-          padding:10px 20px;
-          font-size:18px;
-          font-family: Asar;
-          cursor:pointer;
-          border-radius: 30%;          
-        "
-      >
-        Obedecer al Orangután
-      </button>
+      <div class="texto-historia">
+El más supremo polícia de la seguridad nacional, conocido como “El Orangután”, estaba siguiendo a Saimon. <br> “¡Es sospechoso de pensamiento en contra de la Nueva Constitución de 3010”.<br>
+ Al parecer, el periódico y el pequeño dispositivo forman parte de un conjunto de patrañas conspiranóicas de la convivencia ciudadana.
+      </div>
 
-      <button
-        onclick="window.location.href='Final ARRESTO.html'"
-        style="
-          background:#123f93;
-          color:#ffe25f;
-          border:none;
-          padding:10px 20px;
-          font-size:18px;
-          font-family: Asar;
-          cursor:pointer;
-          border-radius: 30%;          
-        "
-      >
-        Confrontar al policía
-      </button>
+      <div class="columna-botones">
+        <button class="boton-accion" onclick="window.location.href='Interacción 6.html'">
+          Defender a Saimon
+        </button>
+
+        <button class="boton-accion" onclick="window.location.href='Final SE QUEDA VIAJANDO EN EL METRO.html'">
+          Obedecer al Orangután
+        </button>
+
+        <button class="boton-accion" onclick="window.location.href='Final ARRESTO.html'">
+          Confrontar al policía
+        </button>
+      </div>
 
     </div>
 
-  </div>
-      
   </body>
 </html>

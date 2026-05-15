@@ -1,161 +1,144 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Interacción 1</title>
-    <meta
-      name="Interacción 1"
-      content="vagón"
-    />
+    <title>Capítulo 1</title>
     <link
       id="favicon"
       rel="icon"
-      href="https://glitch.com/edit/favicon-app.ico"
+      href="assets/images/prota.png"
       type="image/x-icon"
     />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Asar&display=swap');
+   
 
-    <link
-      rel="stylesheet"
-      href="
-style.css"
-    />
-    <script
-      src=".
-/script.js"
-      defer
-    ></script>
+      body, html {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .fondo-vagon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain; 
+        background-color: rgba(30, 30, 30, 0.925);
+        z-index: -1;
+      }
+
+      .prota {
+        /*display: block;
+        width: auto;
+        /*height: auto;*/
+        /*max-height: 55%;
+        margin: auto auto -5px auto;
+        z-index: 5;*/
+        display: block;
+        width: auto;
+        /* height: auto; */
+        height: 60vh; 
+        margin: auto auto -5px auto;
+        z-index: 5;
+      }
+
+      .interaccion-container {
+  width: 100%;
+  background: #e4c94fec; 
+  padding: 30px 40px; /* Aumentamos el padding superior/inferior para dar más aire */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* ESTO centra verticalmente el texto y la columna de botones */
+  gap: 40px;
+  z-index: 10;
+  position: relative;
+  min-height: 25vh;
+      }
+
+      .texto-historia {
+  width: 65%; /* Bajamos un poco el ancho para que no choque con los botones */
+  color: #173668;
+  font-size: 23px;
+  font-family: 'Asar', serif;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+      }
+
+      .columna-botones {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Un poco más de espacio entre botones */
+  align-items: center; 
+  justify-content: center; /* Centra los botones dentro de su propia columna */
+  width: 30%;
+  margin: 0;
+      }
+
+      .boton-accion {
+        background: #123f93;
+        color: #ffe25f;
+        border: none;
+        padding: 8px 20px;
+        width: fit-content; 
+        font-size: 18px;
+        font-family: 'Amoria', sans-serif; 
+        cursor: pointer;
+        border-radius: 30px;
+        transition: transform 0.2s;
+        text-align: center;
+      }
+
+      .boton-accion:hover {
+        transform: scale(1.05);
+        background: #1a4eb3;
+      }
+    </style>
   </head>
 
   <body>
 
-    <body
-  style="
-    margin:0;
-    width:100vw;
-    height:100vh;
-    overflow:hidden;
-    position:relative;
-    font-family:Times New Roman, serif;
-    display:flex;
-    flex-direction:column;
-  "
->
+
+    <img src="assets/images/fondo vagon.jpeg" class="fondo-vagon" alt="Fondo Vagón">
 
 
-  <img src="assets/images/fondo vagon.jpeg" alt=""   alt=""
-    style="
-      position:absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      z-index:-1;
-    "/>
+    <img src="assets/images/prota.png" class="prota" alt="Protagonista">
 
-    <img src="assets/images/prota.png" alt=""
-    style="
-      width:auto;
-      height:auto;
-      max-height:50%;
-      object-fit:contain;
-      z-index:1;
-      flex-shrink:0;
-    "/>
 
-    <div
-    style="
-      position:absolute;
-      bottom:0;
-      left:0;
-      width:100%;
-      background:#e4c84f;
-      padding:25px;
-      box-sizing:border-box;
+    <div class="interaccion-container">
 
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:30px;
-    "
-  >
 
-    <!-- TEXTO -->
-    <div
-      style="
-        width:70%;
-        color:black;
-        font-size:22px;
-        font-family: Asar;
-        line-height:1.8;
-      "
-    >
-  
-      "Otra vez aquí..." piensas para tus adentros. Eres una estudiante de sexto semestre de Historia, pero siempre tuviste un presentimiento <br> de que nunca te contaron todo; que algo faltaba, que no todo estaba bien, que era demasiado increíble para ser verdad. <br>
-      Pero eso en este momento no importaba, te vas a subir al metro, por amor a Dios.   
-    </div>
+      <div class="texto-historia">
+        "Otra vez aquí..." piensas para tus adentros. Eres una estudiante de sexto semestre de Historia,<br>
+        pero siempre tuviste un presentimiento de que nunca te contaron todo; que algo faltaba, que no todo estaba bien, que era demasiado increíble para ser verdad. <br>
+        Pero eso en este momento no importaba, te vas a subir al metro, por amor a Dios.   
+      </div>
 
-       <div
-      style="
-        display:flex;
-        flex-direction:column;
-        gap:15px;
-      "
-    >
+      <div class="columna-botones">
+        <button class="boton-accion" onclick="window.location.href='Interacción 2.html'">
+          Explorar el vagón en el que estás
+        </button>
 
-      <button
-        onclick="window.location.href='Interacción 2.html'"
-        style="
-          background:#123f93;
-          color:#ffe25f;
-          border:none;
-          padding:10px 20px;
-          font-size:18px;
-          font-family: Asar;
-          cursor:pointer;
-          border-radius: 30%;
-        "
-      >
-        Explorar el vagón
-      </button>
+        <button class="boton-accion" onclick="window.location.href='Extra 1.html'">
+          Se me olvidó qué es esto, ¿qué es el metro?
+        </button>
 
-      <button
-        onclick="window.location.href='Extra 1.html'"
-        style="
-          background:#123f93;
-          color:#ffe25f;
-          border:none;
-          padding:10px 20px;
-          font-size:18px;
-          font-family: Asar;
-          cursor:pointer;
-          border-radius: 30%;
-        "
-      >
-        ¿Qué es el metro?
-      </button>
-
-      <button
-        onclick="window.location.href='Final NO SALE DE CASA Y REPRUEBA CLASES.html'"
-        style="
-          background:#123f93;
-          color:#ffe25f;
-          border:none;
-          padding:10px 20px;
-          font-size:18px;
-          font-family: Asar;
-          cursor:pointer;
-          border-radius: 30%;         
-        "
-      >
-        Te desvías de camino y vuelves a tu casa
-      </button>
+        <button class="boton-accion" onclick="window.location.href='Final NO SALE DE CASA Y REPRUEBA CLASES.html'">
+          Te desvías de camino <br> y vuelves a tu casa
+        </button>
+      </div>
 
     </div>
-
-  </div>
 
   </body>
 </html>

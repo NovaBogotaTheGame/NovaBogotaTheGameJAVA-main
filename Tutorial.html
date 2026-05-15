@@ -2,10 +2,6 @@
 <html lang="en">
   <head>
     <title>Tutorial</title>
-    <meta
-      name="Tutorial"
-      content="Instrucciones para Nova Bogotá"
-    />
     <link
       id="favicon"
       rel="icon"
@@ -15,42 +11,124 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Asar&display=swap');
+   
 
-    <link
-      rel="stylesheet"
-      href="
-style.css"
-    />
-    <script
-      src=".
-/script.js"
-      defer
-    ></script>
+      body, html {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .tutorial {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain; 
+        background-color: rgba(30, 30, 30, 0.925);
+        z-index: -1;
+      }
+
+      .protat {
+  display: block;
+  width: auto;
+  flex-grow: 1;        /* ESTO es lo que empuja el header hacia abajo */
+  max-height: 75vh;   /* Ajusta esto para que la prota no sea GIGANTE */
+  object-fit: contain;
+  margin: 0 auto;     /* Centrado horizontal solamente */
+  z-index: 5;
+  align-self: center;
+  margin-top: auto;
+      }
+
+      .interaccion-container {
+        width: 100%;
+        background: #e4c94fec; 
+        padding: 15px 40px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        z-index: 10;
+        position: relative;
+        flex-grow: 1;
+      }
+
+      .texto-historia {
+        width: 100%;
+        color: #173668;
+        font-size: 28px;
+        font-family: 'Asar', serif;
+        line-height: 1.6;
+      }
+
+      .columna-botones {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+      }
+
+      .boton-accion {
+        background: #123f93;
+        color: #ffe25f;
+        border: none;
+        padding: 8px 20px;
+        width: fit-content; 
+        font-size: 28px;
+        font-family: 'Amoria', sans-serif; 
+        cursor: pointer;
+        border-radius: 30px;
+        transition: transform 0.2s;
+        text-align: center;
+      }
+
+      .boton-accion:hover {
+        transform: scale(1.05);
+        background: #1a4eb3;
+      }
+    </style>
   </head>
 
   <body>
 
-    <h1>TUTORIAL</h1>
-    <p>
-        En esta novela visual deberás de leer atentamente cada uno de los textos que verás en los recuadros del header amarillo. Con esta información, tendrás la capacidad de tomar tus propias decisiones a través de los botones que encontrarás en la misma sección, a la derecha.
-        ¡Ve, y vive tu propia aventura!
-        husakhdkasd
-    </p>
 
-   <button class="nav-button" onclick="window.location.href = 'index.html'">Entiendo</button>
+    <img src="assets/images/tutorial.png" class="tutorial" alt="Tutorial">
+    <img src="assets/images/prota tutorial.png" class="protat" alt="Protagonista tuto">
 
-  <img
-    src="assets/images/tutorial.png"
-    alt=""
-    style="
-      position:absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-      object-fit:contain;
-      z-index:-1;
-    "
-    img>
+
+    <div class="interaccion-container">
+
+
+      <div class="texto-historia">
+En esta novela visual deberás de leer atentamente cada uno de los textos que verás en los recuadros de este header amarillo. Con esta información, tendrás la capacidad de tomar tus propias decisiones
+ a través de los botones que encontrarás en la misma sección a la derecha<br>
+ ¡Ve, y vive tu propia aventura!
+      </div>
+
+      <div class="columna-botones">
+        <button class="boton-accion" onclick="window.location.href='index.html'">
+          Entendido
+        </button>
+      </div>
+
+    </div>
+ <audio
+      id="audio-home-credits"
+      src="assets/sounds/tutorial.wav"
+      preload="auto"
+      autoplay
+      playsinline
+    ></audio>
   </body>
 </html>
