@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Home</title>
+    <title>Extra 5</title>
     <meta
       name="description"
       content="our first interactive multimedia narrative"
@@ -29,12 +29,101 @@ style.css"
   </head>
 
   <body>
-    <h1>NOVA BOGOTÁ</h1>
-    <p>Eres una joven universitaria, estudiante de historia. <br>
-Pones en duda tu realidad... ¿Cómo es posible que una ciudad tan <br> 
-caótia ahora viva en tanta paz y armonía...? Para alguien de los años <br>
-2000's sería simplemente imposible de imaginar.</p>
-    <button onclick="window.location.href = 'index.html'">Entiendo</button>
+
+
+  <!-- IMAGEN DE FONDO -->
+  <img
+    src="assets/images/extra 2.jpg"
+    alt=""
+    style="
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      object-fit:contain;
+      z-index:-1;
+      background:rgb#222;
+    "
+  />
+
+
+
+  <!-- TÍTULO -->
+  <h1
+    style="
+      position:absolute;
+      top:20px;
+      left:20px;
+      color:white;
+      font-size:48px;
+      margin:0;
+      text-shadow:2px 2px 4px black;
+    "
+  >
+  
+  </h1>
+
+  <!-- CAJA INFERIOR -->
+  <div
+    style="
+      position:absolute;
+      bottom:0;
+      left:0;
+      width:100%;
+      background:#e4c84f;
+      padding:25px;
+      box-sizing:border-box;
+
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:30px;
+    "
+  >
+
+    <!-- TEXTO -->
+    <div
+      style="
+        width:70%;
+        color:black;
+        font-size:22px;
+        line-height:1.8;
+      "
+    >
+    <h3>
+      Eres una joven universitaria que estudia historia. <br>
+Pones en duda tu realidad, ¿Cómo es posible que una ciudad en antaño tan <br> 
+caótica ahora viva en tanta paz y armonía...? Para alguien de los años <br>
+2000 sería, simplemente, imposible de imaginar.
+</h3>
+    </div>
+
+    <!-- BOTONES -->
+    <div
+      style="
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+      "
+    >
+
+      
+      </button>
+
+      <button
+        onclick="window.location.href='index.html'"
+        style="
+          background:#123f93;
+          color:#ffe25f;
+          border:none;
+          padding:10px 20px;
+          font-size:18px;
+          cursor:pointer;
+        "
+      >
+        Entendido
+    
     
   </body>
 </html>

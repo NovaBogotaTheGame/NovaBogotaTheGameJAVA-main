@@ -1,33 +1,18 @@
- <!doctype html>
+      <!doctype html>
 <html lang="en">
   <head>
-    <title>Home</title>
-
-    <meta
-      name="description"
-      content="our first interactive multimedia narrative"
-    />
-
-    <link
-      id="favicon"
-      rel="icon"
-      href="https://glitch.com/edit/favicon-app.ico"
-      type="image/x-icon"
-    />
+    <title>Común y corriente</title>
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <link
+    
+<link
       rel="stylesheet"
       href="style.css"
     />
 
-    <script
-      src="./script.js"
-      defer
-    ></script>
+    <script src="./script.js" defer></script>
   </head>
 
   <body
@@ -38,35 +23,66 @@
       overflow:hidden;
       position:relative;
       font-family:Times New Roman, serif;
-      background:#bfc7cc;
+      background:#6f7473;
     "
   >
 
-    <!-- IMAGEN -->
-     <img
-    src="assets/images/final normal.png"
-    alt=""
-    style="
-      position:absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-      object-fit:contain;
-      z-index:-1;
-    "
-    img>
-    / 
+    <!-- IMAGEN ORIGINAL COMPLETA -->
+    <img
+      src="assets/images/final normal.png"
+      alt=""
+      style="
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        object-fit:contain;
+        z-index:-1;
+      "
+    />
+<!-- HEADER SUPERIOR -->
+    <div class="game-over"
+      style="
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        background:#e7860d;
+        padding:28px 0;
+        box-sizing:border-box;
+        z-index:2;
+        text-align:center;
+      "
+    >
 
-    <!-- SUBTÍTULO INFERIOR -->
+      <!-- TÍTULO -->
+      <h1
+        style="
+          margin:0;
+          color:black;
+          font-size:80px;
+          letter-spacing:2px;
+          font-weight:normal;
+        "
+      >
+        GAME OVER
+      </h1>
+
+    </div>
+
+    </div>
+    <!-- SUBTÍTULO VERDE -->
     <div
       style="
         position:absolute;
-        bottom:58px;
+        bottom:0;
         left:0;
         width:100%;
         background:#89C70D;
-        padding:18px 25px;
+
+        padding:28px 25px;
+
         box-sizing:border-box;
 
         display:flex;
@@ -76,7 +92,7 @@
       "
     >
 
-      <!-- TEXTO ORIGINAL -->
+      <!-- TEXTO -->
       <div
         style="
           width:78%;
@@ -85,15 +101,20 @@
           line-height:1.8;
         "
       >
-      
+<h3>
+        Tienes un buen día. Nada lo suficientemente interesante pasó hoy que haya cambiado
+        la trayectoria de tu vida ni tu forma de pensar.
+        <br>
 
-        Tienes un día bien hpta. Nada lo suficientemente interesante pasó hoy que haya cambiado
-        la trayectoria de tu vida ni tu forma de pensar. <br> Decides drogarte un poco por las calles de la 
-        ciudad, esas que nunca dejan de asombrarte con su belleza. Que bueno que vives en un lugar
-        perfecto en donde nada malo sucede 
+        Decides fumar un poco de marimba, pues sabes pilotearla, por las calles de la 
+        ciudad; esas que nunca dejan de asombrarte con su belleza.
+
+        Que bueno que vives en un lugar
+        perfecto en donde nada malo sucede.
+</h3>
       </div>
 
-      <!-- PANEL DERECHO -->
+      <!-- BOTÓN -->
       <div
         style="
           display:flex;
@@ -116,42 +137,8 @@
             cursor:pointer;
           "
         >
-          Entendido
+          Volver a empezar
         </button>
-
-      </div>
-
-    </div>
-
-    <!-- FRANJA INFERIOR -->
-    <div
-      style="
-        position:absolute;
-        bottom:0;
-        left:0;
-        width:100%;
-        height:58px;
-        background:#aab4bb;
-      "
-    >
-
-      <!-- LÍNEAS -->
-      <div
-        style="
-          position:absolute;
-          top:28px;
-          left:0;
-          width:100%;
-          display:flex;
-          justify-content:space-around;
-        "
-      >
-
-        <div style="width:70px;height:8px;background:#ffd400;"></div>
-        <div style="width:70px;height:8px;background:#ffd400;"></div>
-        <div style="width:70px;height:8px;background:#ffd400;"></div>
-        <div style="width:70px;height:8px;background:#ffd400;"></div>
-        <div style="width:70px;height:8px;background:#ffd400;"></div>
 
       </div>
 
@@ -160,7 +147,7 @@
     <!-- AUDIO -->
     <audio
       id="audio-home-credits"
-      src="assets/sounds/final no sale de casa.wav"
+      src="assets/sounds/final día común-se queda viajando.wav"
       preload="auto"
       autoplay
       playsinline

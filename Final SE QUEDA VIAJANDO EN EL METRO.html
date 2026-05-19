@@ -1,7 +1,7 @@
- <!doctype html>
+  <!doctype html>
 <html lang="en">
   <head>
-    <title>Home</title>
+    <title>Viaja en metro</title>
 
     <meta
       name="description"
@@ -38,79 +38,97 @@
       overflow:hidden;
       position:relative;
       font-family:Times New Roman, serif;
-      background:#d9d9d9;
+      background:#6f7473;
     "
   >
 
-    <!-- BARRA SUPERIOR -->
+    <!-- HEADER SUPERIOR -->
     <div
+      style="
+        position:absolute;
+        top:-35px;
+        left:0;
+        width:100%;
+        height:255px;
+
+        background:#37C9FF;
+
+        z-index:4;
+
+        display:flex;
+        flex-direction:column;
+      "
+    >
+
+      <!-- BARRA SUPERIOR -->
+      <div
+        style="
+          width:100%;
+          height:35px;
+          background:#6f7473;
+          flex-shrink:0;
+        "
+      ></div>
+
+      <!-- TÍTULO -->
+      <div
+        style="
+          flex:1;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+        "
+      >
+        <h1
+          style="
+            margin:0;
+            color:white;
+            font-size:80px;
+            letter-spacing:2px;
+            font-weight:normal;
+          "
+        >
+          GAME OVER
+        </h1>
+      </div>
+
+    </div>
+
+    <!-- IMAGEN -->
+    <img
+      src="assets/images/final viaje.png"
+      alt=""
       style="
         position:absolute;
         top:0;
         left:0;
         width:100%;
-        height:35px;
-        background:#6f7473;
-        z-index:3;
+        height:100%;
+        object-fit:contain;
+        z-index:-1;
       "
-    ></div>
-
-    <!-- IMAGEN -->
-    <img
-        src="assets/images/final viaje.png"
-    alt=""
-    style="
-      position:absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-      object-fit:contain;
-      z-index:-1;
-    "
     />
 
-    <!-- TÍTULO -->
+    <!-- HEADER INFERIOR -->
     <div
       style="
         position:absolute;
-        top:35px;
+        bottom:0;
         left:0;
         width:100%;
-        background:#37C9FF;
-        text-align:center;
-        padding:28px 0;
-        z-index:2;
-      "
-    >
-      <h1
-        style="
-          margin:0;
-          color:rgb(255, 254, 254);
-          font-size:20px;
-          letter-spacing:2px;
-          font-weight:normal;
-        "
-      >
-        NOVA BOGOTÁ
-      </h1>
-    </div>
+        height:220px;
 
-    <!-- SUBTÍTULO NARANJA -->
-    <div
-      style="
-        position:absolute;
-        bottom:55px;
-        left:0;
-        width:100%;
         background:#37C9FF;
-        padding:18px 25px;
+
+        padding:25px;
         box-sizing:border-box;
 
         display:flex;
         justify-content:space-between;
         align-items:center;
         gap:30px;
+
+        z-index:3;
       "
     >
 
@@ -118,18 +136,16 @@
       <div
         style="
           width:75%;
-          color:rgb(255, 255, 255);
+          color:white;
           font-size:20px;
           line-height:1.8;
         "
       >
-        Vas a la carcel, ¡VIDA TRIPLEHPTA!. Hablaste más de lo que debías o eres un total irrespetuoso.
-        Te desviaste demasiado de la norma.
-        Fuiste advertida de que esto iba a pasar,
-        y aún así decidiste pasarte de la raya.
-        Que lástima, habías progresado tanto...
-        Bueno, así es la vida.
-        Esto no es culpa de nadie más que tuya.
+        <h3>Sigues tu viaje en metro, puedes ignorar todo a tu alrededor. No es necesario preocuparte por los problemas de los demás, así como hace Israel, ni de artefactos extraños.<br>
+        Simplemente te colocas tus audífonos una vez más y miras por la ventana.<br>
+        Tal vez llegues tarde a clase, pero eso es lo único grave que podría pasar hoy.<br>
+        Pronto se te olvidará todo esto...
+      </h3>
       </div>
 
       <!-- BOTÓN -->
@@ -146,7 +162,6 @@
           style="
             background:#123f93;
             color:#e7860d;
-;
             border:none;
             padding:8px 18px;
             font-size:15px;
@@ -154,7 +169,7 @@
             border-radius:20px;
           "
         >
-          Entendido
+          Volver a empezar
         </button>
 
       </div>
@@ -164,7 +179,7 @@
     <!-- AUDIO -->
     <audio
       id="audio-home-credits"
-      src="assets/sounds/final arresto.wav"
+      src="assets/sounds/final día común-se queda viajando.wav.wav"
       preload="auto"
       autoplay
       playsinline

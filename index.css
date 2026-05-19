@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&display=swap');
+
 @font-face {
   font-family: "MIDDLETO";
   /*   font-weight: bold; */
@@ -7,11 +9,30 @@
 
 /* ------Éste estilo aplica para todos los body de todas las html del proyecto---- */
 
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+font-family: 'Times New Roman', Times, serif;  
+    font-size: 20px;
+
+}
+
+.game-over h1 {
+  font-family: 'Micro 5', serif;
+    font-size: 80px;
+}
 .index-page {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: "MIDDLETO", sans-serif; background-image: url("assets/images/home.jpeg"); background-color: grey;;
+  /*font-family: "MIDDLETO", sans-serif;*/
+  font-family: "Micro 5", sans-serif; 
+  background-image: url("assets/images/home.jpeg"); 
+  background-color: grey;;
   background-size: contain;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -44,14 +65,7 @@
   z-index: 1;
 }
 
-.index-page h1 {
-  font-family: "MIDDLETO", sans-serif;
-  font-size: clamp(3.2rem, 8vw, 6rem);
-  line-height: 1.05;
-  margin: 0;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
+
 
 .index-page .bottom-nav {
   position: relative;
