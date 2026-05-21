@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Micro+5&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Micro+5&display=swap');
+
 @font-face {
   font-family: "MIDDLETO";
   /*   font-weight: bold; */
@@ -16,14 +18,18 @@ body {
   height: 100vh;
   overflow: hidden;
   position: relative;
-font-family: 'Times New Roman', Times, serif;  
-    font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;  
+  font-size: 20px;
 
 }
 
 .game-over h1 {
   font-family: 'Micro 5', sans-serif;
     font-size: 80px;
+}
+.h3 {
+  font-weight: lighter;
+  font-family: 'Gruppo', cursive;
 }
 .index-page {
   min-height: 100vh;
@@ -107,15 +113,16 @@ font-family: 'Times New Roman', Times, serif;
   padding: 1rem 1.4rem;
   border-radius: 30px;
   background: #f1c40f;
-  color: #222;
+  color: #173668;
+  font-family: 'Gruppo', cursive; 
   text-decoration: none;
   font-weight: 700;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 6px 18px rgba(23, 54, 104, 0.18);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .index-page .nav-button:hover,
 .index-page .nav-button:focus-visible {
   transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 10px 24px rgba(23, 54, 104, 0.22);
 }

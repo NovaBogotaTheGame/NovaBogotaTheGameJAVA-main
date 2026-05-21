@@ -1,17 +1,10 @@
-@font-face {
-  font-family: "Amoria";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Amoria"),
-       url("assets/fonts/AMORIA.otf") format("opentype");
-}
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Micro+5&display=swap');
 
 .creditos-page {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: "Amoria", sans-serif;
+  font-family: 'Gruppo', cursive;
   background-image: url("assets/images/home.jpeg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -26,9 +19,12 @@
 }
 
 .creditos-page * {
-  font-family: "Amoria", sans-serif;
+  font-family: 'Gruppo', cursive;
 }
-
+.h2{
+  font-weight: 900;
+  color: #FFDA45;
+}
 .creditos-page::before {
   content: "";
   position: absolute;
@@ -46,7 +42,7 @@
 }
 
 .creditos-page h1 {
-  font-family: "Amoria", sans-serif;
+  font-family: 'Gruppo', cursive;
   font-size: clamp(3.2rem, 8vw, 6rem);
   line-height: 1.05;
   margin: 0;
@@ -59,7 +55,7 @@
   margin: 14rem;
   padding: 2rem 1.5rem;
   text-align: center;
-  background: rgba(0, 0, 0, 0.28);
+  background: rgba(0, 0, 0, 0.185);
   border-radius: 24px;
   /*box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);*/
   z-index: 1;
@@ -75,7 +71,7 @@
 .creditos-page .nav-button,
 .creditos-page .hero-header,
 .creditos-page h1 {
-  font-family: "Amoria", sans-serif;
+  font-family: 'Gruppo', cursive;
 }
 
 .creditos-page .creditos-content h2,

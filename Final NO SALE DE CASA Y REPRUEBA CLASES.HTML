@@ -1,38 +1,27 @@
-    <!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <title>No sales de casa</title>
-<link
+
+    <link
       id="favicon"
       rel="icon"
       href="assets/images/final reprueba.png"
       type="image/x-icon"
     />
+
     <meta
       name="description"
       content="our first interactive multimedia narrative"
-    />
-
-    <link
-      id="favicon"
-      rel="icon"
-      href="https://glitch.com/edit/favicon-app.ico"
-      type="image/x-icon"
     />
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link
-      rel="stylesheet"
-      href="style.css"
-    />
+    <link rel="stylesheet" href="index.css" />
 
-    <script
-      src="./script.js"
-      defer
-    ></script>
+    <script src="./script.js" defer></script>
   </head>
 
   <body
@@ -43,11 +32,7 @@
       overflow:hidden;
       position:relative;
       font-family:Times New Roman, serif;
-
-      background-image:url('assets/images/final reprueba.png');
-      background-size:cover;
-      background-position:center;
-      background-repeat:no-repeat;
+      background:#aab4bb;
     "
   >
 
@@ -62,11 +47,14 @@
         width:100%;
         height:100%;
         object-fit:contain;
+        object-position:center;
         z-index:-1;
       "
     />
-<!-- HEADER SUPERIOR -->
-    <div class="game-over"
+
+    <!-- HEADER SUPERIOR -->
+    <div
+      class="game-over"
       style="
         position:absolute;
         top:0;
@@ -79,12 +67,11 @@
         text-align:center;
       "
     >
-
-      <!-- TÍTULO -->
       <h1
         style="
           margin:0;
-          color:white;
+          font-family: 'Micro 5', sans-serif;
+          color:#FFE785;
           font-size:80px;
           letter-spacing:2px;
           font-weight:normal;
@@ -92,8 +79,8 @@
       >
         GAME OVER
       </h1>
+    </div>
 
-    </div>  
     <!-- HEADER INFERIOR -->
     <div
       style="
@@ -104,7 +91,6 @@
         background:#488D8C;
         padding:18px 25px 35px 25px;
         box-sizing:border-box;
-
         display:flex;
         justify-content:space-between;
         align-items:flex-start;
@@ -112,52 +98,52 @@
       "
     >
 
-      <!-- TEXTO ORIGINAL -->
+      <!-- TEXTO -->
       <div
         style="
           width:78%;
           color:white;
-          font-size:16px;
+          font-size:22px;
           line-height:1.8;
         "
       >
-        <h3>Te devuelves a tu casa para no pensar más en los acontecimientos del día de hoy.
-        Nunca obtuviste respuestas, pero ya no sabes si eso es bueno o malo.
-        <br>
-        Lastimosamente, eso ocasiona en tí un desamor hacia la historia.
-        Ya no le pones el esfuerzo que solías.
-        <br>
-        Esto te lleva a perder tus clases, 
-        es mejor que retires la carrera...
+        <h3 class="h3">
+          Te devuelves a tu casa para no pensar más en los acontecimientos del día de hoy.
+          Nunca obtuviste respuestas, pero ya no sabes si eso es bueno o malo.
+          <br>
+          Lastimosamente, eso ocasiona en tí un desamor hacia la historia.
+          Ya no le pones el esfuerzo que solías.
+          <br>
+          Esto te lleva a perder tus clases,
+          es mejor que retires la carrera...
         </h3>
       </div>
 
-      <!-- PANEL DERECHO -->
+      <!-- BOTÓN -->
       <div
         style="
           display:flex;
           flex-direction:column;
           align-items:center;
-          gap:8px;
+          gap:12px;
           min-width:120px;
         "
       >
-
         <button
           onclick="window.location.href='index.html'"
           style="
-            background:#123f93;
-            color:#e7860d;
+            background:#FFE785;
+            color:#488D8C;
             border:none;
-            padding:4px 14px;
+            padding:8px 18px;
             font-size:20px;
             border-radius:20px;
             cursor:pointer;
+            align-items: center;
           "
         >
           Volver a empezar
         </button>
-
       </div>
 
     </div>

@@ -24,7 +24,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
 
     <script src="./script.js" defer></script>
   </head>
@@ -37,7 +37,7 @@
       overflow:hidden;
       position:relative;
       font-family:Times New Roman, serif;
-      background:#000;
+      background:#000000;
     "
   >
 
@@ -53,7 +53,6 @@
         background:#953E2C;
 
         z-index:4;
-
         display:flex;
         flex-direction:column;
       "
@@ -78,14 +77,16 @@
           justify-content:center;
         "
       >
+      
         <h1
           style="
+           font-family: 'Micro 5', sans-serif;
             margin:0;
-            color:white;
+            color:#FFE785;
             font-size:80px;
             letter-spacing:2px;
             font-weight:normal;
-          "
+            "
         >
           GAME OVER
         </h1>
@@ -140,7 +141,7 @@
           line-height:1.8;
         "
       >
-       <h3> ¡Te llevaron a una secta!<br>
+       <h3 class="h3"> ¡Te llevaron a una secta!<br>
         Brevemente, hubo oscuridad ,y cuando volviste a abrir los ojos, lo único que viste a tu alrededor es un culto. Gente extraña, un entorno desconocido, fuego en vasijas, oscuridad en las esquinas...
         Esto responde a todas tus preguntas, por qué Nova Bogotá es cómo es, por qué todo parece “perfecto”... Lástima que ya no podrás contarle esto a nadie. Un grupo de figuras encapuchadas te rodean y tú sabes que no verás la luz del sol nunca más...
         Despídete. Fue un placer.<br>
@@ -160,8 +161,8 @@
         <button
           onclick="window.location.href='index.html'"
           style="
-            background:#123f93;
-            color:#e7860d;
+            background:#FFE785;
+            color:#953E2C;
             border:none;
             padding:8px 18px;
             font-size:20px;
