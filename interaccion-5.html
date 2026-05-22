@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Estás jugando: Nova Bogotá</title>
+    <link
+      id="favicon"
+      rel="icon"
+      href="assets/images/prota.png"
+      type="image/x-icon"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link
+      rel="stylesheet"
+      href="interacciones.css"
+    />    
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Micro+5&display=swap');
+
+    </style>
+  </head>
+
+  <body>
+
+
+    <img src="assets/images/fondo-vagon.jpeg" class="fondo-vagon" alt="Fondo Vagón">
+
+<div class="contenedor-imagenes">
+
+    <img src="assets/images/prota.png" class="imagen" id="prota" alt="Protagonista">
+
+    <img src="assets/images/policia.png" class="imagen" alt="Policia">
+    </div>
+
+
+    <div class="interaccion-container">
+
+      <div class="texto-historia">
+        <h1>
+<span> El más </span> <span> supremo </span> <span> polícia </span> <span> de la </span> <span> seguridad </span> <span> nacional, </span> <span> conocido </span> <span> como </span> <span> “El </span> <span> Orangután”, </span>
+<span> estaba </span> <span> siguiendo </span> <span> a Saimon. </span> <br>
+<span> “¡Es </span> <span> sospechoso de </span> <span> pensamiento </span> <span> en contra </span> <span> de la </span> <span> Nueva </span> <span> Constitución </span> <span> de 3010!”. </span> <br>
+<span> Al </span> <span> parecer, </span> <span> el periódico </span> <span> y el </span> <span> pequeño </span> <span> dispositivo </span> <span> forman </span> <span> parte </span> <span> de un </span>
+<span> conjunto </span> <span> de patrañas </span> <span> conspiranóicas </span> <span> sobre la </span> <span> convivencia </span> <span> ciudadana. </span>
+        </h1>
+      </div>
+
+      <div class="columna-botones">
+        <button class="boton-accion" onclick="window.location.href='interaccion-6.html'">
+          Defender a Saimon
+        </button>
+
+        <button class="boton-accion" onclick="window.location.href='final-viajando-en-el-metro.html'">
+          Obedecer al Orangután
+        </button>
+
+        <button class="boton-accion" onclick="window.location.href='final-arresto.html'">
+          Confrontar al policía
+        </button>
+      </div>
+
+    </div>
+<audio
+      id="audio-home-credits"
+      src="assets/sounds/orangutan.mp3"
+      preload="auto"
+      autoplay
+      playsinline
+      autoreplay
+    ></audio>
+    <audio
+      id="audio-home-credits"
+      src="assets/sounds/interacciones.mp3"
+      preload="auto"
+      autoplay
+      playsinline
+      autoreplay
+    ></audio>
+  </body>
+</html>

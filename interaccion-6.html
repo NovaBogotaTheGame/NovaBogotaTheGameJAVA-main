@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Estás jugando: Nova Bogotá</title>
+    <link
+      id="favicon"
+      rel="icon"
+      href="assets/images/prota.png"
+      type="image/x-icon"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link
+      rel="stylesheet"
+      href="interacciones.css"
+    />      
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Micro+5&display=swap');
+
+    </style>
+  </head>
+
+  <body>
+
+
+    <img src="assets/images/fondo-vagon.jpeg" class="fondo-vagon" alt="Fondo Vagón">
+
+<div class="contenedor-imagenes">
+
+    <img src="assets/images/prota.png" class="imagen" id="prota6" alt="Protagonista">
+
+    <img src="assets/images/historiador.png" class="imagen" alt="Historiador">
+    <img src="assets/images/periodico.png" class="imagen" id="periodico6" alt="Periodico">
+    <img src="assets/images/policia.png" class="imagen" id="policia6" alt="Policia">
+    </div>
+
+
+    <div class="interaccion-container">
+
+
+      <div class="texto-historia">
+  <h1>
+      <span> Aunque </span> <span> no tienes </span> <span> totalmente </span> <span> claro </span> <span>lo que </span> <span> está </span> <span> pasando, </span> <span> definitivitamente </span>
+      <span> no puedes </span> <span> dejar </span> <span> a Saimon </span> <span> a su </span> <span> suerte. </span>  <br>
+      <span>Tomas </span> <span> el valor </span> <span> para </span> <span> contrariar </span> <span> al Orangután </span> <span> y no </span> <span> entregarle </span> <span> el periódico. </span>  <br>
+      <span>  El Orangután, </span> <span> firme </span> <span> y contundente, </span> <span> amenaza </span> <span> con tomar </span> <span> las mismas </span> <span> medidas </span> <span> contigo </span> <span> en caso </span> 
+      <span> de no </span> <span> retractarte. </span> 
+  </h1>
+      </div>
+
+      <div class="columna-botones">
+        <button class="boton-accion" onclick="window.location.href='final-viajando-en-el-metro.html'">
+          Te rindes. Entregas a Saimon y el periódico
+        </button>
+
+        <button class="boton-accion" onclick="window.location.href='final-arresto.html'">
+          Preguntar qué está pasando y por qué
+        </button>
+
+        <button class="boton-accion" onclick="window.location.href='interaccion-7.html'">
+          Continuar apoyando a Saimon,<br>
+          no obedecer al Orangután y desafiarlo
+        </button>
+      </div>
+
+    </div>
+<audio
+      id="audio-home-credits"
+      src="assets/sounds/interacciones.mp3"
+      preload="auto"
+      autoplay
+      playsinline
+      autoreplay
+    ></audio>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+      <!doctype html>
+<html lang="en">
+  <head>
+    <title>Tuviste un día común y corriente en Nova Bogotá</title>
+<link
+      id="favicon"
+      rel="icon"
+      href="assets/images/final-comun.png"
+      type="image/x-icon"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+<link
+      rel="stylesheet"
+      href="index.css"
+    />
+
+    <script src="./script.js" defer></script>
+    
+  </head>
+
+  <body
+  
+  >
+
+    <!-- IMAGEN ORIGINAL COMPLETA -->
+    <img
+      src="assets/images/final-comun.png"
+      alt=""
+      style="
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        object-fit:contain;
+        z-index:-1;
+      "
+    />
+<!-- HEADER SUPERIOR -->
+    <div class="game-over"
+      style="
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        background:#89C70D;
+        padding:28px 0;
+        box-sizing:border-box;
+        z-index:2;
+        text-align:center;
+      "
+    >
+
+      <!-- TÍTULO -->
+      <h1
+        style="
+          margin:0;
+          color:#335a98;
+          font-size:80px;
+          letter-spacing:2px;
+          font-weight:normal;
+        "
+      >
+        <span>GAME</span> 
+        <span>OVER</span>
+      </h1>
+
+    </div>
+
+    
+    <!-- SUBTÍTULO VERDE -->
+    <div
+      style="
+        position:absolute;
+        bottom:0;
+        left:0;
+        width:100%;
+        background:#89C70D;
+
+        padding:28px 25px;
+
+        box-sizing:border-box;
+
+        display:flex;
+        justify-content:space-between;
+        align-items:flex-start;
+        gap:30px;
+      "
+    >
+
+      <!-- TEXTO -->
+      <div
+        style="
+          width:78%;
+          color:white;
+          font-size:22px;
+          line-height:1.8;
+        "
+      >
+<h3 class="h3">
+        Tienes un buen día. Nada lo suficientemente interesante pasó hoy que haya cambiado
+        la trayectoria de tu vida, ni tu forma de pensar.
+        <br>
+
+        Decides caminar por las calles de la 
+        ciudad, esas que nunca dejan de asombrarte con su belleza.<br>
+
+        Que bueno que vives en un lugar perfecto en donde nada malo sucede...
+</h3>
+      </div>
+
+      <!-- BOTÓN -->
+      <div
+        style="
+          display:flex;
+          flex-direction:column;
+          align-items:center;
+          gap:12px;
+          min-width:120px;
+        "
+      >
+
+        <button
+          onclick="window.location.href='index.html'"
+          style="
+            background:#335a98;
+            color:#89C70D;
+            border:none;
+            padding:4px 14px;
+            font-size:20px;
+            border-radius:20px;
+            cursor:pointer;
+          "
+        >
+          Volver a empezar
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- AUDIO -->
+    <audio
+      id="audio-home-credits"
+      src="assets/sounds/final-dia-comun-y-viajando.mp3"
+      preload="auto"
+      autoplay
+      playsinline
+      autoreplay
+    ></audio>
+
+  </body>
+</html>

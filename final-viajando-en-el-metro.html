@@ -1,0 +1,192 @@
+  <!doctype html>
+<html lang="en">
+  <head>
+    <title>Sigues viajando en el metro de Nova Bogotá</title>
+<link
+      id="favicon"
+      rel="icon"
+      href="assets/images/final-viaje.png"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="our first interactive multimedia narrative"
+    />
+
+    <link
+      
+      rel="icon"
+      href="https://glitch.com/edit/favicon-app.ico"
+      type="image/x-icon"
+    />
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="index.css"
+    />
+
+    <script
+      src="./script.js"
+      defer
+    ></script>
+  </head>
+
+  <body
+    style="
+      background:#6f7473;
+    "
+  >
+
+    <!-- HEADER SUPERIOR -->
+    <div
+      style="
+        position:absolute;
+        top:-35px;
+        left:0;
+        width:100%;
+        height:255px;
+
+        background:#37C9FF;
+
+        z-index:4;
+
+        display:flex;
+        flex-direction:column;
+      "
+    >
+
+      <!-- BARRA SUPERIOR -->
+      <div
+        style="
+          width:100%;
+          height:35px;
+          background:#6f7473;
+          flex-shrink:0;
+        "
+      ></div>
+
+      <!-- TÍTULO -->
+      <div
+        style="
+          flex:1;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+        "
+      >
+        <h1
+          style="
+            margin:0;
+            font-family: 'Micro 5', sans-serif;
+            color:#FFE785;
+            font-size:80px;
+            letter-spacing:2px;
+            font-weight:normal;
+          "
+        >
+          <span>GAME</span> 
+          <span>OVER</span>
+        </h1>
+      </div>
+
+    </div>
+
+    <!-- IMAGEN -->
+    <img
+      src="assets/images/final-viaje.png"
+      alt=""
+      style="
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        object-fit:contain;
+        z-index:-1;
+      "
+    />
+
+    <!-- HEADER INFERIOR -->
+    <div
+      style="
+        position:absolute;
+        bottom:0;
+        left:0;
+        width:100%;
+        height:220px;
+
+        background:#37C9FF;
+
+        padding:25px;
+        box-sizing:border-box;
+
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        gap:30px;
+
+        z-index:3;
+      "
+    >
+
+      <!-- TEXTO -->
+      <div
+        style="
+          width:75%;
+          color:white;
+          font-size:22px;
+          line-height:1.8;
+        "
+      >
+        <h3 class="h3">
+          Sigues tu viaje en metro, puedes ignorar todo a tu alrededor. No es necesario preocuparte por los problemas de los demás, ni de artefactos extraños.<br>
+          Simplemente te colocas tus audífonos, por una vez más. y miras por la ventana.<br>
+          Tal vez llegues tarde a clase, pero eso es lo único grave que podría pasar hoy.<br>
+          Pronto se te olvidará todo esto... 
+        </h3>
+      </div>
+
+      <!-- BOTÓN -->
+      <div
+        style="
+          display:flex;
+          flex-direction:column;
+          gap:12px;
+        "
+      >
+
+        <button
+          onclick="window.location.href='index.html'"
+          style="
+            background:#FFE785;
+            color:#37C9FF;
+            border:none;
+            padding:8px 18px;
+            font-size:20px;
+            cursor:pointer;
+            border-radius:20px;
+          "
+        >
+          Volver a empezar
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- AUDIO -->
+    <audio
+      id="audio-home-credits"
+      src="assets/sounds/final-dia-comun-y-viajando.mp3"
+      preload="auto"
+      autoplay
+      playsinline
+      autoreplay
+    ></audio>
+
+  </body>
+</html>
