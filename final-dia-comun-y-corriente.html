@@ -22,7 +22,11 @@
   </head>
 
   <body
-  
+  style="
+    
+      background:#aab4bb;
+    "
+
   >
 
     <!-- IMAGEN ORIGINAL COMPLETA -->
@@ -46,6 +50,8 @@
         top:0;
         left:0;
         width:100%;
+        min-height:10vh;
+        max-height:15vh;
         background:#89C70D;
         padding:28px 0;
         box-sizing:border-box;
@@ -94,22 +100,17 @@
       <!-- TEXTO -->
       <div
         style="
-          width:78%;
+          width:80%;
           color:white;
           font-size:22px;
           line-height:1.8;
         "
       >
 <h3 class="h3">
-        Tienes un buen día. Nada lo suficientemente interesante pasó hoy que haya cambiado
-        la trayectoria de tu vida, ni tu forma de pensar.
+       <span> Tienes </span> <span> un buen día. </span> <span> Nada lo suficientemente </span> <span> interesante pasó hoy</span> <span> que haya cambiado </span> <span> la trayectoria de tu vida, <span></span>ni tu forma de pensar.</span>
         <br>
-
-        Decides caminar por las calles de la 
-        ciudad, esas que nunca dejan de asombrarte con su belleza.<br>
-
-        Que bueno que vives en un lugar perfecto en donde nada malo sucede...
-</h3>
+        <span>Decides caminar </span> <span> por las calles de </span> <span>la ciudad, </span> <span>esas que nunca </span> <span>dejan de asombrarte</span> <span> con su belleza.</span><br> 
+        <span> Que bueno que</span> <span> vives en un lugar perfecto</span> <span> en donde nada malo sucede...</span>
       </div>
 
       <!-- BOTÓN -->
@@ -117,25 +118,39 @@
         style="
           display:flex;
           flex-direction:column;
-          align-items:center;
-          gap:12px;
-          min-width:120px;
+          padding:100px;
+          gap: 15px;  
         "
       >
 
-        <button
+        <button class="columna-botones"
           onclick="window.location.href='index.html'"
           style="
             background:#335a98;
             color:#89C70D;
             border:none;
-            padding:4px 14px;
+            padding:8px 18px;
             font-size:20px;
             border-radius:20px;
             cursor:pointer;
           "
         >
           Volver a empezar
+        </button>
+
+        <button class="columna-botones"
+          onclick="window.location.href='interaccion-2.html'"
+          style="
+            background:#335a98;
+            color:#89C70D;
+            border:none;
+            padding:8px 18px;
+            font-size:20px;
+            cursor:pointer;
+            border-radius:20px;
+          "
+        >
+          Volver a intentarlo
         </button>
 
       </div>

@@ -40,7 +40,7 @@
       .interaccion-container {
   width: 100%;
   background: #e4c94fec; 
-  padding: 30px 40px; /* Aumentamos el padding superior/inferior para dar más aire */
+  padding: 30px 60px; /* Aumentamos el padding superior/inferior para dar más aire */
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -48,17 +48,39 @@
   gap: 40px;
   z-index: 10;
   position: relative;
-  min-height: 25vh;
+  min-height: 10vh;
+  max-height: 20vh;
+  overflow: auto;
+  overflow:hidden;
       }
 
+    /* container 5 */
+/*    .interaccion-container5 {
+  width: 100%;
+  background: #e4c94fec; 
+  padding: 30px 40px; 
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  gap: 40px;
+  z-index: 10;
+  position: relative;
+  min-height: 25vh;
+    }    
+*/    
+    
+
       .texto-historia {
-  width: 65%; /* Bajamos un poco el ancho para que no choque con los botones */
+  width: 100%; /* Bajamos un poco el ancho para que no choque con los botones */
   color: #173668;
-  font-size: 17px;
+  font-size: 13px;
 font-family: 'Gruppo', cursive;
   line-height: 1.5;
   display: flex;
   align-items: center;
+  align-self:stretch;
+  padding: 20px 20px;
       }
 
       .columna-botones {
@@ -133,6 +155,10 @@ max-width: 16%;
 #periodico4{
   max-width: 23%;
   margin-bottom: 40px;
+}
+ /* i 5 */
+#prota5 {
+  max-width: 16%;
 }
 
 /* i 6 */
@@ -524,6 +550,124 @@ span:nth-child(86) {
 span:nth-child(87) {
   animation: fade-in 0.8s 8.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
+
+
+span:nth-child(88) {
+  animation: fade-in 0.8s 8.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(89) {
+  animation: fade-in 0.8s 8.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(90) {
+  animation: fade-in 0.8s 9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(91) {
+  animation: fade-in 0.8s 9.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(92) {
+  animation: fade-in 0.8s 9.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(93) {
+  animation: fade-in 0.8s 9.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(94) {
+  animation: fade-in 0.8s 9.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(95) {
+  animation: fade-in 0.8s 9.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(96) {
+  animation: fade-in 0.8s 9.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(97) {
+  animation: fade-in 0.8s 9.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(98) {
+  animation: fade-in 0.8s 9.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(99) {
+  animation: fade-in 0.8s 9.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(100) {
+  animation: fade-in 0.8s 10s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(101) {
+  animation: fade-in 0.8s 10.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(102) {
+  animation: fade-in 0.8s 10.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(103) {
+  animation: fade-in 0.8s 10.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(104) {
+  animation: fade-in 0.8s 10.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(105) {
+  animation: fade-in 0.8s 10.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(106) {
+  animation: fade-in 0.8s 10.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(107) {
+  animation: fade-in 0.8s 10.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(108) {
+  animation: fade-in 0.8s 10.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(109) {
+  animation: fade-in 0.8s 10.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(110) {
+  animation: fade-in 0.8s 11s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(111) {
+  animation: fade-in 0.8s 11.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(112) {
+  animation: fade-in 0.8s 11.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(113) {
+  animation: fade-in 0.8s 11.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(114) {
+  animation: fade-in 0.8s 11.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(115) {
+  animation: fade-in 0.8s 11.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(116) {
+  animation: fade-in 0.8s 11.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(117) {
+  animation: fade-in 0.8s 11.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
 @keyframes fade-in {
   100% {
     opacity: 1;
