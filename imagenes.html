@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden; 
+        background-color: #e4c94fec; 
+        font-family: 'Gruppo', cursive;
+        display: flex;
+        flex-direction: column;
+      }
+
+
+      .fondo-galeria {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, #1a233a 0%, #0d111a 100%);
+        z-index: -1;
+      }
+
+
+      .header-galeria {
+        padding: 30px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10;
+      }
+
+      .header-galeria h1 {
+        color: #e4c94f;
+        font-size: 32px;
+        margin: 0;
+        letter-spacing: 2px;
+        text-shadow: 0px 0px 10px rgba(228, 201, 79, 0.3);
+      }
+
+
+      .boton-volver {
+        background: #123f93;
+        color: #ffe25f;
+        border: none;
+        padding: 10px 24px;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 30px;
+        transition: transform 0.2s, background 0.2s;
+        text-decoration: none;
+      }
+
+      .boton-volver:hover {
+        transform: scale(1.05);
+        background: #1a4eb3;
+      }
+
+     
+      .contenedor-grid {
+        flex: 1;
+        overflow-y: auto; 
+        padding: 0 50px 50px 50px;
+        z-index: 5;
+      }
+
+     
+      .galeria-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+        gap: 25px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      
+      .galeria-item {
+        position: relative;
+        border: 2px solid #334155;
+        border-radius: 12px;
+        overflow: hidden;
+        aspect-ratio: 16 / 9; 
+        background: #1e293b;
+        cursor: pointer;
+        transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), border-color 0.3s;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+      }
+
+     
+      .galeria-item:hover {
+        transform: scale(1.04) translateY(-5px);
+        border-color: #e4c94f; 
+        box-shadow: 0 15px 30px rgba(228, 201, 79, 0.2);
+      }
+
+     
+      .galeria-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        transition: transform 0.5s;
+      }
+
+      .galeria-item:hover img {
+        transform: scale(1.05); 
+      }
+
+     
+      .contenedor-grid::-webkit-scrollbar {
+        width: 8px;
+      }
+      .contenedor-grid::-webkit-scrollbar-track {
+        background: rgba(0,0,0,0.1);
+      }
+      .contenedor-grid::-webkit-scrollbar-thumb {
+        background: #123f93;
+        border-radius: 4px;
+      }
+
+      
+      .modal-visor {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(10, 12, 18, 0.95); 
+        z-index: 100; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        pointer-events: none; 
+        transition: opacity 0.4s ease;
+      }
+
+      
+      .modal-visor.active {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+     
+      .imagen-ampliada {
+        max-width: 85%;
+        max-height: 85vh;
+        object-fit: contain;
+        border: 3px solid #e4c94f; 
+        border-radius: 8px;
+        box-shadow: 0 0 30px rgba(228, 201, 79, 0.2);
+        transform: scale(0.9);
+        transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+      }
+
+      .modal-visor.active .imagen-ampliada {
+        transform: scale(1); 
+      }
+
+     
+      .boton-cerrar {
+        position: absolute;
+        top: 30px;
+        right: 50px;
+        background: none;
+        border: none;
+        color: #ffe25f;
+        font-size: 45px;
+        font-family: sans-serif; 
+        cursor: pointer;
+        transition: transform 0.2s, color 0.2s;
+        line-height: 1;
+      }
+
+      .boton-cerrar:hover {
+        transform: scale(1.2);
+        color: #ffffff;
+      }
+    </style>
+</head>
+<body>
+
+    <div class="fondo-galeria"></div>
+
+    <div class="header-galeria">
+        <button class="boton-volver" onclick="window.location.href='index.html'">
+            Volver al Home
+        </button>
+    </div>
+
+    <div class="contenedor-grid">
+        <div class="galeria-grid">
+            
+            <!-- Foto 1 -->
+            <div class="galeria-item">
+                <img src="assets/images/fondo-vagon.jpeg" alt="Fondo del vagón">
+            </div>
+
+            <!-- Foto 2 -->
+            <div class="galeria-item">
+                <img src="assets/images/tutorial.png" alt="Recuerdo 2">
+            </div>
+
+            <!-- Foto 3 -->
+            <div class="galeria-item">
+                <img src="assets/images/extra-1.jpeg" alt="Recuerdo 3">
+            </div>
+
+            <!-- Foto 4 -->
+            <div class="galeria-item">
+                <img src="assets/images/extra-5.jpg" alt="Recuerdo 4">
+            </div>
+
+            <!-- Foto 5 -->
+            <div class="galeria-item">
+                <img src="assets/images/final-carcel.jpeg" alt="Fondo del vagón">
+            </div>
+
+            <!-- Foto 6 -->
+            <div class="galeria-item">
+                <img src="assets/images/final-comun.png" alt="Recuerdo 2">
+            </div>
+
+            <!-- Foto 7 -->
+            <div class="galeria-item">
+                <img src="assets/images/final-reprueba.png" alt="Recuerdo 3">
+            </div>
+
+            <!-- Foto 8 -->
+            <div class="galeria-item">
+                <img src="assets/images/final-sacrificio.jpeg" alt="Recuerdo 4">
+            </div>
+
+            <!-- Foto 9 -->
+            <div class="galeria-item">
+                <img src="assets/images/final-viaje.png" alt="Fondo del vagón">
+            </div>
+
+            <!-- Foto 10 -->
+            <div class="galeria-item">
+                <img src="assets/images/historiador.png" alt="Recuerdo 2">
+            </div>
+
+            <!-- Foto 11 -->
+            <div class="galeria-item">
+                <img src="assets/images/policia.png" alt="Recuerdo 3">
+            </div>
+
+            <!-- Foto 12 -->
+            <div class="galeria-item">
+                <img src="assets/images/prota.png" alt="Recuerdo 4">
+            </div>
+
+            <!-- Foto 13 -->
+            <div class="galeria-item">
+                <img src="assets/images/prota-tutorial.png" alt="Fondo del vagón">
+            </div>
+
+            <!-- Foto 14 -->
+            <div class="galeria-item">
+                <img src="assets/images/home.jpeg" alt="Recuerdo 2">
+            </div>
+
+            <!-- Foto 15 -->
+            <div class="galeria-item">
+                <img src="assets/images/mp3.png" alt="Recuerdo 3">
+            </div>
+
+            <!-- Foto 16 -->
+            <div class="galeria-item">
+                <img src="assets/images/periodico.png" alt="Recuerdo 4">
+            </div>
+
+        </div>
+    </div>
+
+    
+    <div id="modalVisor" class="modal-visor" onclick="cerrarImagen()">
+        <button class="boton-cerrar" onclick="cerrarImagen()">&times;</button>
+        <img id="imagenAmpliada" class="imagen-ampliada" src="" alt="Vista ampliada" onclick="event.stopPropagation()">
+    </div>
+
+   
+    <script>
+        const modal = document.getElementById('modalVisor');
+        const imagenAmpliada = document.getElementById('imagenAmpliada');
+
+        // Seleccionamos todos los elementos de la galería
+        const itemsGaleria = document.querySelectorAll('.galeria-item');
+
+        itemsGaleria.forEach(item => {
+            item.addEventListener('click', () => {
+                // Buscamos la etiqueta <img> que está dentro del contenedor clickeado
+                const imgOriginal = item.querySelector('img');
+                
+                // Le pasamos la ruta de la foto al contenedor grande
+                imagenAmpliada.src = imgOriginal.src;
+                imagenAmpliada.alt = imgOriginal.alt;
+
+                // Activamos el modal añadiendo la clase CSS
+                modal.classList.add('active');
+            });
+        });
+
+        function cerrarImagen() {
+            // Quitamos la clase para ocultar el visor
+            modal.classList.remove('active');
+            // Limpiamos el src después de la transición para evitar parpadeos la próxima vez
+            setTimeout(() => {
+                imagenAmpliada.src = "";
+            }, 400);
+        }
+
+        // Permite cerrar la imagen también presionando la tecla Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === "Escape" && modal.classList.contains('active')) {
+                cerrarImagen();
+            }
+        });
+    </script>
+
+</body>
+</html>
