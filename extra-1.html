@@ -23,117 +23,119 @@
 
 <body
   style="
-    margin:0;
-    width:100vw;
-    height:100vh;
-    overflow:hidden;
-    position:relative;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
     font-family: 'Gruppo', cursive;
-    background:black;
+    background: black;
+    overflow-x: hidden;
   "
 >
 
-  <!-- IMAGEN DE FONDO -->
   <img
     src="assets/images/extra-1.jpeg"
     alt=""
     style="
-      position:absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-      object-fit:contain;
-      z-index:-1;
-      background:rgb(53, 53, 53);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      z-index: -1;
+      background: rgb(53, 53, 53);
     "
   />
 
-  
-  
 
-  <!-- CAJA INFERIOR -->
   <div
     style="
-      position:absolute;
-      bottom:0;
-      left:0;
-      width:100%;
-      background:#e4c84f;
-      padding:25px;
-      box-sizing:border-box;
-
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:30px;
+      width: 100%;
+      background: #e4c84f;
+      padding: 25px 40px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; /* Alineación vertical exacta */
+      gap: 40px;
+      z-index: 3;
+      margin-top: auto; /* Empuja la caja al fondo de la pantalla de forma elástica */
     "
   >
 
-    <!-- TEXTO -->
+
     <div
       style="
-        width:70%;
-        color:rgb(23, 54, 104);
-        font-size:22px;
-        line-height:1.8;
+        max-width: 80%;
+        color: rgb(23, 54, 104);
+        font-size: 22px;
+        line-height: 1.5;
       "
-    ><h3 class="h3">
-      <span> El tren</span> <span>hipersónico se convierte</span> <span>en el sistema de transporte público</span> <span></span> <span>por excelencia, 
-      debido al alto costo</span> <span>del sistema de teletransporte masivo...</span>
+    >
+      <h3 class="h3" style="margin: 0; font-weight: normal;">
+        <span>El</span> <span>tren</span> <span>hipersónico</span> <span>se</span> <span>convierte</span> <span>en</span> 
+        <span>el</span> <span>sistema</span> <span>de</span> <span>transporte</span> <span>público</span>
+        <span>por</span> <span>excelencia,</span> <span>debido</span> <span>al</span> <span>alto</span>
+        <span>costo</span> <span>del</span> <span>sistema</span> <span>de</span> <span>teletransporte</span>
+        <span>masivo...</span>
       </h3>
     </div>
 
-    <!-- BOTONES -->
+
     <div
       style="
-        display:flex;
-        flex-direction:column;
-        gap:15px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        flex-shrink: 0;
       "
     >
-
       <button class="columna-botones"
         onclick="window.location.href='extra-2.html'"
         style="
-          background:#123f93;
-          color:#ffe25f;
-          border:none;
-          padding:10px 20px;
-          font-size:18px;
-          cursor:pointer;
+          background: #123f93;
+          color: #ffe25f;
+          border: none;
+          padding: 12px 24px;
+          font-size: 18px;
+          cursor: pointer;
           border-radius: 30px;
+          white-space: nowrap;
         "
       >
         Quiero saber más
       </button>
 
       <button class="columna-botones"
-        onclick="window.location.href='index.html'"
+        onclick="window.location.href='interaccion-1.html'"
         style="
-          background:#123f93;
-          color:#ffe25f;
-          border:none;
-          padding:10px 20px;
-          font-size:18px;
-          cursor:pointer;
+          background: #123f93;
+          color: #ffe25f;
+          border: none;
+          padding: 12px 24px;
+          font-size: 18px;
+          cursor: pointer;
           border-radius: 30px;
+          white-space: nowrap;
         "
       >
         Entendido
       </button>
-
     </div>
 
   </div>
-<audio
-      id="audio-home-credits"
-      src="assets/sounds/extras.mp3"
-      preload="auto"
-      autoplay
-      playsinline
-      autoreplay
-    ></audio>
-</body>
 
-</html>
+
+  <audio
+    id="audio-home-credits"
+    src="assets/sounds/extras.mp3"
+    preload="auto"
+    autoplay
+    playsinline
+  ></audio>
+
+</body>
