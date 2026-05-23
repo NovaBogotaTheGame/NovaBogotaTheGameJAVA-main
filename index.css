@@ -25,12 +25,15 @@ body {
   font-size: 20px;
 
 }
-
-.game-over h1 {
+      .game-over h1 {
   font-family: 'Micro 5', sans-serif;
-    font-size: 80px;
       transform: scale(0.94);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+            margin:0;
+          color:#173668;
+          font-size:74px;
+          letter-spacing:4px;
+          font-weight:normal;
 }
 @keyframes scale {
   100% {
@@ -129,9 +132,10 @@ span:nth-child(3) {
 }
 
 .play-button {
-  font-size: 1.25em;
+  font-size: 1.50em;
   padding: 1.2rem 2rem;
   min-width: 240px;
+  font-weight: bold;
 }
 
 .credits-button {
@@ -139,8 +143,13 @@ span:nth-child(3) {
   bottom: -67px;
   right: 1.5rem;
 }
-
+.imagen.button {
+    position: absolute;
+  bottom: -67px;
+  left: -1.5rem;
+}
 .index-page .nav-button {
+  font-size: 1.30em;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -611,4 +620,10 @@ span:nth-child(105) {
     opacity: 1;
     filter: blur(0);
   }
+}
+
+.index-page .galeria-button {
+  position: absolute;
+  bottom: -67px;
+  left: 1.5rem; /* Alineado a la izquierda usando la misma distancia */
 }
