@@ -21,151 +21,146 @@
     
   </head>
 
-  <body
-  style="
-    
-      background:#aab4bb;
-    "
+<body style="
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background: #aab4bb;
+">
 
+  <!-- IMAGEN ORIGINAL COMPLETA -->
+  <img
+    src="assets/images/final-comun.png"
+    alt=""
+    style="
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: fit;
+      z-index: -1;
+    "
+  />
+
+  <!-- HEADER SUPERIOR (GAME OVER) -->
+  <div class="game-over"
+    style="
+      width: 100%;
+      background: #89C70D;
+      padding: 20px 0;
+      box-sizing: border-box;
+      z-index: 2;
+      text-align: center;
+    "
+  >
+    <!-- TÍTULO -->
+    <h1
+      style="
+        margin: 0;
+        color: #335a98;
+        font-size: 80px;
+        letter-spacing: 2px;
+        font-weight: normal;
+      "
+    >
+      <span>GAME</span> 
+      <span>OVER</span>
+    </h1>
+  </div>
+
+  <!-- CONTENEDOR INFERIOR VERDE (Se ajusta proporcionalmente al texto) -->
+  <div
+    style="
+      width: 100%;
+      background: #89C70D;
+      padding: 20px 40px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; /* Alineación perfecta al centro vertical */
+      gap: 40px;
+      z-index: 2;
+      margin-top: auto; /* Empuja la barra al fondo de la pantalla de forma fluida */
+    "
   >
 
-    <!-- IMAGEN ORIGINAL COMPLETA -->
-    <img
-      src="assets/images/final-comun.png"
-      alt=""
-      style="
-        position:absolute;
-        top:0;
-        left:0;
-        width:100%;
-        height:100%;
-        object-fit:contain;
-        z-index:-1;
-      "
-    />
-<!-- HEADER SUPERIOR -->
-    <div class="game-over"
-      style="
-        position:absolute;
-        top:0;
-        left:0;
-        width:100%;
-        min-height:10vh;
-        max-height:15vh;
-        background:#89C70D;
-        padding:28px 0;
-        box-sizing:border-box;
-        z-index:2;
-        text-align:center;
-      "
-    >
-
-      <!-- TÍTULO -->
-      <h1
-        style="
-          margin:0;
-          color:#335a98;
-          font-size:80px;
-          letter-spacing:2px;
-          font-weight:normal;
-        "
-      >
-        <span>GAME</span> 
-        <span>OVER</span>
-      </h1>
-
-    </div>
-
-    
-    <!-- SUBTÍTULO VERDE -->
+    <!-- TEXTO -->
     <div
       style="
-        position:absolute;
-        bottom:0;
-        left:0;
-        width:100%;
-        background:#89C70D;
-
-        padding:28px 25px;
-
-        box-sizing:border-box;
-
-        display:flex;
-        justify-content:space-between;
-        align-items:flex-start;
-        gap:30px;
+        max-width: 70%;
+        color: white;
+        font-size: 22px;
+        line-height: 1.6;
       "
     >
-
-      <!-- TEXTO -->
-      <div
-        style="
-          width:80%;
-          color:white;
-          font-size:22px;
-          line-height:1.8;
-        "
-      >
-<h3 class="h3">
-       <span> Tienes </span> <span> un buen día. </span> <span> Nada lo suficientemente </span> <span> interesante pasó hoy</span> <span> que haya cambiado </span> <span> la trayectoria de tu vida, <span></span>ni tu forma de pensar.</span>
-        <br>
-        <span>Decides caminar </span> <span> por las calles de </span> <span>la ciudad, </span> <span>esas que nunca </span> <span>dejan de asombrarte</span> <span> con su belleza.</span><br> 
-        <span> Que bueno que</span> <span> vives en un lugar perfecto</span> <span> en donde nada malo sucede...</span>
-      </div>
-
-      <!-- BOTÓN -->
-      <div
-        style="
-          display:flex;
-          flex-direction:column;
-          padding:100px;
-          gap: 15px;  
-        "
-      >
-
-        <button class="columna-botones"
-          onclick="window.location.href='index.html'"
-          style="
-            background:#335a98;
-            color:#89C70D;
-            border:none;
-            padding:8px 18px;
-            font-size:20px;
-            border-radius:20px;
-            cursor:pointer;
-          "
-        >
-          Volver a empezar
-        </button>
-
-        <button class="columna-botones"
-          onclick="window.location.href='interaccion-2.html'"
-          style="
-            background:#335a98;
-            color:#89C70D;
-            border:none;
-            padding:8px 18px;
-            font-size:20px;
-            cursor:pointer;
-            border-radius:20px;
-          "
-        >
-          Volver a intentarlo
-        </button>
-
-      </div>
-
+      <h3 class="h3" style="margin: 0; font-weight: normal;">
+        <span> Tienes </span> <span> un buen día. </span> <span> Nada lo </span> <span> suficientemente</span> </span> <span> interesante </span>
+      <span> pasó </span> <span> hoy</span> <span> que haya </span> <span> cambiado </span> <span> la trayectoria </span> <span> de tu </span> <span> vida, </span><span>ni tu </span> <span> forma de </span>
+      <span>pensar.</span>
+      <span>Decides </span> <span> caminar </span> <span> por las </span> <span> calles de </span> <span>la ciudad, </span>
+     <span>esas que</span> <span> nunca </span> <span>dejan de </span> <span>asombrarte</span> <span> con su belleza.</span>
+      <span> Que bueno que</span> <span> vives en </span> <span>un lugar</span> <span> perfecto</span> <span> en donde </span> <span> nada malo</span>
+     <span> sucede...</span>
+      </h3>
     </div>
 
-    <!-- AUDIO -->
-    <audio
-      id="audio-home-credits"
-      src="assets/sounds/final-dia-comun-y-viajando.mp3"
-      preload="auto"
-      autoplay
-      playsinline
-      autoreplay
-    ></audio>
+    <!-- BOTONES -->
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        flex-shrink: 0; /* Asegura que los botones no se compriman */
+      "
+    >
+      <button class="columna-botones"
+        onclick="window.location.href='index.html'"
+        style="
+          background: #335a98;
+          color: #89C70D;
+          border: none;
+          padding: 12px 24px;
+          font-size: 18px;
+          border-radius: 20px;
+          cursor: pointer;
+          white-space: nowrap;
+        "
+      >
+        Volver a empezar
+      </button>
 
-  </body>
-</html>
+      <button class="columna-botones"
+        onclick="window.location.href='interaccion-2.html'"
+        style="
+          background: #335a98;
+          color: #89C70D;
+          border: none;
+          padding: 12px 24px;
+          font-size: 18px;
+          cursor: pointer;
+          border-radius: 20px;
+          white-space: nowrap;
+        "
+      >
+        Volver a intentarlo
+      </button>
+    </div>
+
+  </div>
+
+  <!-- AUDIO -->
+  <audio
+    id="audio-home-credits"
+    src="assets/sounds/final-dia-comun-y-viajando.mp3"
+    preload="auto"
+    autoplay
+    playsinline
+  ></audio>
+
+</body>
