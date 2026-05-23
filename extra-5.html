@@ -31,117 +31,121 @@ extras.css"
 
 <body
   style="
-    margin:0;
-    width:100vw;
-    height:100vh;
-    overflow:hidden;
-    position:relative;
-    background:#535353; 
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background: #535353;
+    overflow-x: hidden;
   "
-  >
+>
 
 
-  <!-- IMAGEN DE FONDO -->
   <img
     src="assets/images/extra-5.jpg"
     alt=""
     style="
-      position:absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-      object-fit:contain;
-      z-index:-1;
-      background:rgb#222;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      z-index: -1;
+      background: #222;
     "
   />
 
 
-
-  <!-- TÍTULO -->
   <h1
     style="
-      position:absolute;
-      top:20px;
-      left:20px;
-      color:white;
-      font-size:48px;
-      margin:0;
-      text-shadow:2px 2px 4px black;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: white;
+      font-size: 48px;
+      margin: 0;
+      text-shadow: 2px 2px 4px black;
+      z-index: 2;
     "
-  >
-  
-  </h1>
+  ></h1>
 
-  <!-- CAJA INFERIOR -->
+ 
   <div
     style="
-      position:absolute;
-      bottom:0;
-      left:0;
-      width:100%;
-      background:#e4c84f;
-      padding:25px;
-      box-sizing:border-box;
-
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:30px;
+      width: 100%;
+      background: #e4c84f;
+      padding: 25px 40px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+      z-index: 3;
+      margin-top: auto; /* Empuja la barra al fondo */
     "
-  
+  >
 
-    <!-- TEXTO -->
+
     <div
       style="
-        width:70%;
-        color:rgb(23, 54, 104);
-        font-size:22px;
-        line-height:1.8;
+        max-width: 90%;
+        color: rgb(23, 54, 104);
+        font-size: 22px;
+        line-height: 1.8;
       "
     >
-    <h3 class="h3">
-      <span>Eres una joven universitaria que estudia historia.</span><br>
-<span>Pones en duda tu realidad,</span> <span>¿Cómo es posible que una ciudad en antaño tan</span> <span>caótica ahora viva en tanta paz y armonía?</span> <span>Para alguien de los años
-2000 sería, simplemente, imposible de imaginar...</span>
-</h3>
+      <h3 class="h3" style="margin: 0; font-weight: normal;">
+        <span>Eres</span> <span>una</span> <span>joven</span> <span>universitaria</span> <span>que</span>
+        <span>estudia</span> <span>historia.</span>
+        <span>Pones</span> <span>en</span> <span>duda</span> <span>tu</span> <span>realidad,</span>
+        <span>¿Cómo</span> <span>es</span> <span>posible</span> <span>que</span> <span>una</span> <span>ciudad</span>
+        <span>en</span> <span>antaño</span> <span>tan</span> <span>caótica</span> <span>ahora</span> <span>viva</span>
+        <span>en</span> <span>tanta</span> <span>paz</span> <span>y</span> <span>armonía?</span> <span>Para</span>
+        <span>alguien</span> <span>de</span> <span>los</span> <span>años</span> <span>2000</span> <span>sería,</span>
+        <span>simplemente,</span> <span>imposible</span> <span>de</span> <span>imaginar...</span>
+      </h3>
     </div>
 
-    <!-- BOTONES -->
+
     <div
       style="
-        display:flex;
-        flex-direction:column;
-        gap:15px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        flex-shrink: 0;
       "
     >
-
-      
-      
-
       <button class="columna-botones"
-        onclick="window.location.href='index.html'"
+        onclick="window.location.href='interaccion-1.html'"
         style="
-          background:#123f93;
-          color:#ffe25f;
-          border:none;
-          padding:10px 20px;
-          font-size:18px;
-          cursor:pointer;
-           border-radius: 30px;
-          
-        ">
+          background: #123f93;
+          color: #ffe25f;
+          border: none;
+          padding: 12px 24px;
+          font-size: 18px;
+          cursor: pointer;
+          border-radius: 30px;
+          white-space: nowrap;
+        "
+      >
         Entendido
-     </button>
-     
-   <audio
-      id="audio-home-credits"
-      src="assets/sounds/extras.mp3"
-      preload="auto"
-      autoplay
-      playsinline
-      autoreplay
-    ></audio>
+      </button>
     </div>
-</html>
+
+  </div>
+
+  <!-- AUDIO -->
+  <audio
+    id="audio-home-credits"
+    src="assets/sounds/extras.mp3"
+    preload="auto"
+    autoplay
+    playsinline
+  ></audio>
+
+</body>
