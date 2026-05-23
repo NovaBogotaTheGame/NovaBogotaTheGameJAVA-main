@@ -29,168 +29,177 @@
     <script src="./script.js" defer></script>
   </head>
 
-  <body
-  
-  >    <!-- HEADER SUPERIOR -->
+<body style="
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background: #aab4bb;
+">
+
+  <!-- HEADER SUPERIOR -->
+  <div
+    style="
+      width: 100%;
+      background: #953E2C;
+      z-index: 4;
+      display: flex;
+      flex-direction: column;
+    "
+  >
+    <!-- BARRA SUPERIOR -->
     <div
       style="
-        position:absolute;
-        top:-35px;
-        left:0;
-        width:100%;
-        height:255px;
+        width: 100%;
+        height: 35px;
+        background: #6f7473;
+        flex-shrink: 0;
+      "
+    ></div>
 
-        background:#953E2C;
-
-        z-index:4;
-        display:flex;
-        flex-direction:column;
+    <!-- TÍTULO -->
+    <div
+      style="
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       "
     >
-
-      <!-- BARRA SUPERIOR -->
-      <div
+      <h1
         style="
-          width:100%;
-          height:35px;
-          background:#6f7473;
-          flex-shrink:0;
-        "
-      ></div>
-
-      <!-- TÍTULO -->
-      <div
-        style="
-          flex:1;
-          display:flex;
-          align-items:center;
-          justify-content:center;
+          font-family: 'Micro 5', sans-serif;
+          margin: 0;
+          color: #FFE785;
+          font-size: 80px;
+          letter-spacing: 2px;
+          font-weight: normal;
         "
       >
-      
-        <h1
-          style="
-           font-family: 'Micro 5', sans-serif;
-            margin:0;
-            color:#FFE785;
-            font-size:80px;
-            letter-spacing:2px;
-            font-weight:normal;
-            "
-        >
         <span>GAME</span> 
         <span>OVER</span>
-        </h1>
-      </div>
-
+      </h1>
     </div>
+  </div>
 
-    <!-- IMAGEN -->
-    <img
-      src="assets/images/final-sacrificio.jpeg"
-      alt=""
-      style="
-        position:absolute;
-        top:0;
-        left:0;
-        width:100%;
-        height:100%;
-        object-fit:cover;
-        z-index:-1;
-      "
-    />
+  <!-- IMAGEN DE FONDO -->
+  <img
+    src="assets/images/final-sacrificio.jpeg"
+    alt=""
+    style="
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: fit;
+      z-index: -1;
+    "
+  />
 
-    <!-- HEADER INFERIOR -->
+  <!-- CONTENEDOR INFERIOR ROJO (Se ajusta proporcionalmente al texto) -->
+  <div
+    style="
+      width: 100%;
+      background: #953E2C;
+      padding: 20px 40px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; /* Centrado vertical impecable */
+      gap: 40px;
+      z-index: 3;
+      margin-top: auto; /* Mantiene el bloque en la parte baja */
+    "
+  >
+
+    <!-- TEXTO -->
     <div
       style="
-        position:absolute;
-        bottom:0;
-        left:0;
-        width:100%;
-        height:220px;
-
-        background:#953E2C;
-
-        padding:25px;
-        box-sizing:border-box;
-
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-        gap:30px;
-
-        z-index:3;
+        max-width: 90%;
+        color: white;
+        font-size: 20px;
+        line-height: 1.6;
       "
     >
+      <h3 class="h3" style="margin: 0; font-weight: normal;">
+<span>¡Te</span> <span>llevaron</span> <span>a</span> <span>una</span> <span>secta!</span>
 
-      <!-- TEXTO -->
-      <div
-        style="
-          width:75%;
-          color:white;
-          font-size:20px;
-          line-height:1.8;
-        "
-      >
-       <h3 class="h3"> <span>¡Te llevaron a una secta!</span><br>
-        <span>Brevemente,</span> <span>hubo oscuridad.</span> <span>Y, cuando volviste a abrir los ojos,</span> <span>lo único que viste a tu alrededor fue un culto.</span> <span>Gente extraña:</span> <span>un entorno desconocido,</span> <span>fuego en vasijas,</span> <span>oscuridad en las esquinas...</span>
-        <span>Esto responde a todas tus preguntas,</span> <span>por qué Nova Bogotá es cómo es,</span> <span>por qué todo parece tan... “perfecto"...</span> <span>Lástima que ya no podrás contarle esto a nadie.</span> <span>Un grupo de figuras encapuchadas te rodean y tú sabes que no verás la luz del sol nunca más.</span>
-        <span>Despídete, fue un placer.</span><br>
-        <span><strong>Ahora eres un sacrificio más para el magnífico Bacatá...</strong></span>
+<span>Brevemente,</span> <span>hubo</span> <span>oscuridad.</span> <span>Y,</span>
+ <span>cuando</span> <span>volviste</span> <span>a</span> <span>abrir</span> <span>los</span> <span>ojos,</span> <span>lo</span> <span>único</span> <span>que</span> <span>viste</span> <span>a</span> <span>tu</span> <span>alrededor</span> <span>fue</span> <span>un</span> <span>culto.</span> <span>Gente</span> <span>extraña:</span> <span>un</span> <span>entorno</span> <span>desconocido,</span> <span>fuego</span> <span>en</span> <span>vasijas,</span> <span>oscuridad</span> <span>en</span> <span>las</span> <span>esquinas...</span>
+
+<span>Esto</span> <span>responde</span> <span>a</span> <span>todas</span> <span>tus</span>
+ <span>preguntas,</span> <span>por</span> <span>qué</span> <span>Nova</span> <span>Bogotá</span>
+  <span>es</span> <span>cómo</span> <span>es,</span> <span>por</span> <span>qué</span> <span>todo</span> 
+  <span>parece</span> <span>tan...</span> <span>“perfecto"...</span> <span>Lástima</span> <span>que</span>
+  <span>ya</span> <span>no</span> <span>podrás</span> <span>contarle</span> <span>esto</span> <span>a</span>
+  <span>nadie.</span>
+  <br> <span>Un</span> <span>grupo</span> <span>de</span> <span>figuras</span> <span>encapuchadas</span> 
+  <span>te</span> <span>rodean</span> <span>y</span> <span>tú</span> <span>sabes</span> <span>que</span>
+  <span>no</span> <span>verás</span> <span>la</span> <span>luz</span> <span>del</span> <span>sol</span>
+  <span>nunca</span> <span>más.</span>
+<span>Despídete,</span> <span>fue</span> <span>un</span> <span>placer.</span>
+<br>
+<span><strong>Ahora</strong></span> <span><strong> eres</strong></span> <span><strong> un</strong></span> <span><strong>sacrificio</strong></span> <span><strong>más</strong></span>
+<span><strong>para</strong></span> <span><strong> el</strong></span> <span><strong>magnífico</strong></span> <span><strong>Bacatá...</strong></span>
       </h3>
-      </div>
-
-      <!-- BOTÓN -->
-      <div
-        style="
-          display:flex;
-          flex-direction:column;
-          gap:12px;
-        "
-      >
-
-        <button class="columna-botones"
-          onclick="window.location.href='index.html'"
-          style="
-            background:#FFE785;
-            color:#953E2C;
-            border:none;
-            padding:8px 18px;
-            font-size:20px;
-            cursor:pointer;
-            border-radius:20px;
-          "
-        >
-          Volver a empezar
-        </button>
-
-        <button class="columna-botones"
-          onclick="window.location.href='interaccion-7.html'"
-          style="
-            background:#FFE785;
-            color:#953E2C;
-            border:none;
-            padding:8px 18px;
-            font-size:20px;
-            cursor:pointer;
-            border-radius:20px;
-          "
-        >
-          Volver a intentarlo
-        </button>
-      </div>
-
     </div>
 
-    <!-- AUDIO -->
-    <audio
-      id="audio-home-credits"
-      src="assets/sounds/final-sacrificio.mp3"
-      preload="auto"
-      autoplay
-      playsinline
-      autoreplay
-    ></audio>
+    <!-- BOTONES -->
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        flex-shrink: 0;
+      "
+    >
+      <button class="columna-botones"
+        onclick="window.location.href='index.html'"
+        style="
+          background: #FFE785;
+          color: #953E2C;
+          border: none;
+          padding: 12px 24px;
+          font-size: 18px;
+          cursor: pointer;
+          border-radius: 20px;
+          white-space: nowrap;
+        "
+      >
+        Volver a empezar
+      </button>
 
-  </body>
-</html>
+      <button class="columna-botones"
+        onclick="window.location.href='interaccion-7.html'"
+        style="
+          background: #FFE785;
+          color: #953E2C;
+          border: none;
+          padding: 12px 24px;
+          font-size: 18px;
+          cursor: pointer;
+          border-radius: 20px;
+          white-space: nowrap;
+        "
+      >
+        Volver a intentarlo
+      </button>
+    </div>
+
+  </div>
+
+  <!-- AUDIO -->
+  <audio
+    id="audio-home-credits"
+    src="assets/sounds/final-sacrificio.mp3"
+    preload="auto"
+    autoplay
+    playsinline
+  ></audio>
+
+</body>
