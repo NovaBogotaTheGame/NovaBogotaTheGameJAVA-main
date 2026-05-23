@@ -6,7 +6,7 @@
         padding: 0;
         width: 100vw;
         height: 100vh;
-        overflow: hidden;
+        overflow: auto;
         display: flex;
         flex-direction: column;
       }
@@ -22,25 +22,14 @@
         z-index: -1;
       }
 
-      .prota {
-        /*display: block;
-        width: auto;
-        /*height: auto;*/
-        /*max-height: 55%;
-        margin: auto auto -5px auto;
-        z-index: 5;*/
-        display: block;
-        width: auto;
-        /* height: auto; */
-        height: 60vh; 
-        margin: auto auto -5px auto;
-        z-index: 5;
-      }
+      
+
+ 
 
       .interaccion-container {
   width: 100%;
   background: #e4c94fec; 
-  padding: 30px 60px; /* Aumentamos el padding superior/inferior para dar más aire */
+  padding: 10px 30px; /* Aumentamos el padding superior/inferior para dar más aire */
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -48,10 +37,8 @@
   gap: 40px;
   z-index: 10;
   position: relative;
-  min-height: 10vh;
-  max-height: 20vh;
-  overflow: auto;
-  overflow:hidden;
+  min-height: auto;
+  max-height: auto;
       }
 
     /* container 5 */
@@ -69,6 +56,20 @@
   min-height: 25vh;
     }    
 */    
+      .prota {
+        /*display: block;
+        width: auto;
+        /height: auto;/
+        /*max-height: 55%;
+        margin: auto auto -5px auto;
+        z-index: 5;*/
+        display: block;
+        width: auto;
+        /* height: auto; */
+        height: 60vh; 
+        margin: auto auto -5px auto;
+        z-index: 5;
+      }
     
 
       .texto-historia {
@@ -80,7 +81,7 @@ font-family: 'Gruppo', cursive;
   display: flex;
   align-items: center;
   align-self:stretch;
-  padding: 20px 20px;
+  padding: 10px 10px;
       }
 
       .columna-botones {
@@ -131,7 +132,7 @@ font-family: 'Gruppo', cursive;
 }     
 
 #prota {
-  max-width: 20%;
+  max-width: 16%;
   align-self: flex-end;
 }
 
@@ -184,7 +185,7 @@ z-index: 1;
 }
 #historiador7 {
   display: block;
-  max-width: 27%;
+  max-width: 28%;
 }
 
 /* animaciones */
