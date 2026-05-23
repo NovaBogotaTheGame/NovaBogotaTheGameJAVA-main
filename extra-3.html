@@ -1,5 +1,3 @@
-  
-  
   <!doctype html>
 <html lang="en">
 
@@ -29,129 +27,137 @@
 
 <body
   style="
-    margin:0;
-    width:100vw;
-    height:100vh;
-    overflow:hidden;
-    position:relative;
-    background:#535353; 
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background: #535353;
+    overflow-x: hidden;
   "
-  >
-  
+>
 
-  <!-- IMAGEN DE FONDO -->
+
   <img
     src="assets/images/extra-3.jpg"
     alt=""
     style="
-      position:absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-      object-fit:contain;
-      z-index:-1;
-      background:rgb#222;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      z-index: -1;
+      background: #222; /* Corregido el formato de color aquí */
     "
   />
 
-  <!-- TÍTULO -->
+
   <h1
     style="
-      position:absolute;
-      top:20px;
-      left:20px;
-      color:white;
-      font-size:48px;
-      margin:0;
-      text-shadow:2px 2px 4px black;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: white;
+      font-size: 48px;
+      margin: 0;
+      text-shadow: 2px 2px 4px black;
+      z-index: 2;
     "
-  >
-  
-  </h1>
+  ></h1>
 
-  <!-- CAJA INFERIOR -->
+
   <div
     style="
-      position:absolute;
-      bottom:0;
-      left:0;
-      width:100%;
-      background:#e4c84f;
-      padding:25px;
-      box-sizing:border-box;
-
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:30px;
+      width: 100%;
+      background: #e4c84f;
+      padding: 25px 40px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; /* Centrado vertical impecable */
+      gap: 40px;
+      z-index: 3;
+      margin-top: auto; /* Mantiene la barra abajo elásticamente */
     "
   >
 
-    <!-- TEXTO -->
     <div
       style="
-        width:70%;
-        color:rgb(23, 54, 104);
-        font-weight:700;
-        line-height:1.8;
-        font-size:22px;
+        max-width: 90%;
+        color: rgb(23, 54, 104);
+        line-height: 1.8;
+        font-size: 22px;
       "
-    ><h3 class="h3">
-      <span>El Gobierno implementa un nuevo sistema de seguridad de tele-rastreo</span> <span>para los objetos personales de la ciudadanía.</span><br>
-      <span>Se habilitan diferentes puntos</span> <span>de recolección alrededor de la ciudad para reclamar</span> <span>objetos perdidos gracias a este avance tecnológico...</span>
+    >
+      <h3 class="h3" style="margin: 0; font-weight: bold;">
+        <span>El</span> <span>Gobierno</span> <span>implementa</span> <span>un</span> <span>nuevo</span>
+        <span>sistema</span> <span>de</span> <span>seguridad</span> <span>de</span> <span>tele-rastreo</span> 
+        <span>para</span>
+        <span>los</span> <span>objetos</span> <span>personales</span> <span>de</span> <span>la</span>
+        <span>ciudadanía.</span>
+        <span>Se</span> <span>habilitan</span> <span>diferentes</span> <span>puntos</span> <span>de</span>
+        <span>recolección</span> <span>alrededor</span> <span>de</span> <span>la</span> <span>ciudad</span>
+        <span>para</span> <span>reclamar</span> <span>objetos</span> <span>perdidos</span> <span>gracias</span>
+        <span>a</span> <span>este</span> <span>avance</span> <span>tecnológico...</span>
       </h3>
     </div>
 
-    <!-- BOTONES -->
+  
     <div
       style="
-        display:flex;
-        flex-direction:column;
-        gap:15px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        flex-shrink: 0;
       "
     >
-
       <button class="columna-botones"
         onclick="window.location.href='extra-4.html'"
         style="
-          background:#123f93;
-          color:#ffe25f;
-          border:none;
-          padding:10px 20px;
-          font-size:18px;
-          cursor:pointer;
+          background: #123f93;
+          color: #ffe25f;
+          border: none;
+          padding: 12px 24px;
+          font-size: 18px;
+          cursor: pointer;
           border-radius: 30px;
+          white-space: nowrap;
         "
       >
         Quiero saber más
       </button>
 
       <button class="columna-botones"
-        onclick="window.location.href='index.html'"
+        onclick="window.location.href='interaccion-1.html'"
         style="
-          background:#123f93;
-          color:#ffe25f;
-          border:none;
-          padding:10px 20px;
-          font-size:18px;
-          cursor:pointer;
+          background: #123f93;
+          color: #ffe25f;
+          border: none;
+          padding: 12px 24px;
+          font-size: 18px;
+          cursor: pointer;
           border-radius: 30px;
+          white-space: nowrap;
         "
       >
         Entendido
       </button>
-
     </div>
 
   </div>
-<audio
-      id="audio-home-credits"
-      src="assets/sounds/extras.mp3"
-      preload="auto"
-      autoplay
-      playsinline
-      autoreplay
-    ></audio>
-    </body>
-</html>
+
+ 
+  <audio
+    id="audio-home-credits"
+    src="assets/sounds/extras.mp3"
+    preload="auto"
+    autoplay
+    playsinline
+  ></audio>
+
+</body>
