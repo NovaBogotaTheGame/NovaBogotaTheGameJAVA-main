@@ -24,150 +24,145 @@
     <script src="./script.js" defer></script>
   </head>
 
-  <body
+ <body style="
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background: #aab4bb;
+">
+
+  <!-- IMAGEN PRINCIPAL -->
+  <img
+    src="assets/images/final-reprueba.png"
+    alt=""
     style="
-    
-      background:#aab4bb;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: fit;
+      z-index: -1;
+    "
+  />
+
+  <!-- HEADER SUPERIOR (GAME OVER) -->
+  <div class="game-over"
+    style="
+      width: 100%;
+      background: #488D8C;
+      padding: 20px 0;
+      box-sizing: border-box;
+      z-index: 2;
+      text-align: center;
+    "
+  >
+    <h1
+      style="
+        margin: 0;
+        font-family: 'Micro 5', sans-serif;
+        color: #FFE785;
+        font-size: 80px;
+        letter-spacing: 2px;
+        font-weight: normal;
+      "
+    >
+      <span>GAME</span> 
+      <span>OVER</span>
+    </h1>
+  </div>
+
+  <!-- CONTENEDOR INFERIOR TURQUESA (Se ajusta proporcionalmente) -->
+  <div
+    style="
+      width: 100%;
+      background: #488D8C;
+      padding: 20px 40px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; /* Alineación perfecta al centro vertical del texto */
+      gap: 40px;
+      z-index: 2;
+      margin-top: auto; /* Empuja la barra al fondo de la pantalla de forma fluida */
     "
   >
 
-    <!-- IMAGEN PRINCIPAL -->
-    <img
-      src="assets/images/final-reprueba.png"
-      alt=""
-      style="
-        position:absolute;
-        top:0;
-        left:0;
-        width:100%;
-        height:100%;
-        object-fit:contain;
-        object-position:center;
-        z-index:-1;
-      "
-    />
-
-    <!-- HEADER SUPERIOR -->
-    <div
-      class="game-over"
-      style="
-        position:absolute;
-        top:0;
-        left:0;
-        width:100%;
-        background:#488D8C;
-        padding:28px 0;
-        box-sizing:border-box;
-        z-index:2;
-        text-align:center;
-      "
-    >
-      <h1
-        style="
-          margin:0;
-          font-family: 'Micro 5', sans-serif;
-          color:#FFE785;
-          font-size:80px;
-          letter-spacing:2px;
-          font-weight:normal;
-        "
-      >
-        <span>GAME</span> 
-        <span>OVER</span>
-      </h1>
-    </div>
-
-    <!-- HEADER INFERIOR -->
+    <!-- TEXTO -->
     <div
       style="
-        position:absolute;
-        bottom:0;
-        left:0;
-        width:100%;
-        background:#488D8C;
-        padding:18px 25px 35px 25px;
-        box-sizing:border-box;
-        display:flex;
-        justify-content:space-between;
-        align-items:flex-start;
-        gap:30px;
+        max-width: 90%;
+        color: white;
+        font-size: 22px;
+        line-height: 1.6;
       "
     >
-
-      <!-- TEXTO -->
-      <div
-        style="
-          width:78%;
-          color:white;
-          font-size:22px;
-          line-height:1.8;
-        "
-      >
-        <h3 class="h3">
-          Te devuelves a tu casa para no pensar más en lo que debes hacer día de hoy.
-          Evitas todo. Nunca obtuviste respuestas, pero ya no sabes si eso es bueno o malo.
-          <br>
-          Lastimosamente, eso ocasiona en ti un desamor hacia la historia:
-          ya no le pones el esfuerzo que solías.
-          <br>
-          Esto te lleva a perder tus clases,
-          es mejor que retires la carrera...
-        </h3>
-      </div>
-
-      <!-- BOTÓN -->
-      <div
-        style="
-          display:flex;
-          flex-direction:column;
-          align-items:center;
-          gap:12px;
-          min-width:120px;
-        "
-      >
-        <button class="columna-botones"
-          onclick="window.location.href='index.html'"
-          style="
-            background:#FFE785;
-            color:#488D8C;
-            border:none;
-            padding:8px 18px;
-            font-size:20px;
-            border-radius:20px;
-            cursor:pointer;
-            align-items: center;
-          "
-        >
-          Volver a empezar
-        </button>
-
-        <button class="columna-botones"
-          onclick="window.location.href='interaccion-1.html'"
-          style="
-            background:#FFE785;
-            color:#488D8C;
-            border:none;
-            padding:8px 18px;
-            font-size:20px;
-            cursor:pointer;
-            border-radius:20px;
-          "
-        >
-          Volver a intentarlo
-        </button>
-      </div>
-
+      <h3 class="h3" style="margin: 0; font-weight: normal;">
+<span>Te</span> <span>devuelves</span> <span>a</span> <span>tu</span> <span>casa</span> <span>para</span> <span>no</span> <span>pensar</span> <span>más</span> <span>en</span> <span>lo</span> <span>que</span> <span>debes</span> <span>hacer</span> <span>el</span> <span>día</span> <span>de</span> <span>hoy.</span>
+<span>Evitas</span> <span>todo.</span> <span>Nunca</span> <span>obtuviste</span> <span>respuestas,</span> <span>pero</span> <span>ya</span> <span>no</span> <span>sabes</span> <span>si</span> <span>eso</span> <span>es</span> <span>bueno</span> <span>o</span> <span>malo.</span>
+<span>Lastimosamente,</span> <span>eso</span> <span>ocasiona</span> <span>en</span> <span>ti</span> <span>un</span> <span>desamor</span> <span>hacia</span> <span>la</span> <span>historia:</span>
+<span>ya</span> <span>no</span> <span>le</span> <span>pones</span> <span>el</span> <span>esfuerzo</span> <span>que</span> <span>solías.</span>
+<span>Esto</span> <span>te</span> <span>lleva</span> <span>a</span> <span>perder</span> <span>tus</span> <span>clases,</span>
+<span>es</span> <span>mejor</span> <span>que</span> <span>retires</span> <span>la</span> <span>carrera...</span>
+      </h3>
     </div>
 
-    <!-- AUDIO -->
-    <audio
-      id="audio-home-credits"
-      src="assets/sounds/final-no-sale-de-casa.mp3"
-      preload="auto"
-      autoplay
-      playsinline
-      autoreplay
-    ></audio>
+    <!-- BOTONES -->
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        flex-shrink: 0; /* Evita que los botones se achiquen o rompan su ancho */
+      "
+    >
+      <button class="columna-botones"
+        onclick="window.location.href='index.html'"
+        style="
+          background: #FFE785;
+          color: #488D8C;
+          border: none;
+          padding: 12px 24px;
+          font-size: 18px;
+          border-radius: 20px;
+          cursor: pointer;
+          white-space: nowrap; /* Evita saltos de línea molestos dentro del botón */
+        "
+      >
+        Volver a empezar
+      </button>
 
-  </body>
-</html>
+      <button class="columna-botones"
+        onclick="window.location.href='interaccion-1.html'"
+        style="
+          background: #FFE785;
+          color: #488D8C;
+          border: none;
+          padding: 12px 24px;
+          font-size: 18px;
+          cursor: pointer;
+          border-radius: 20px;
+          white-space: nowrap;
+        "
+      >
+        Volver a intentarlo
+      </button>
+    </div>
+
+  </div>
+
+  <!-- AUDIO -->
+  <audio
+    id="audio-home-credits"
+    src="assets/sounds/final-no-sale-de-casa.mp3"
+    preload="auto"
+    autoplay
+    playsinline
+  ></audio>
+
+</body>
