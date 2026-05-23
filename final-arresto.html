@@ -36,149 +36,145 @@
     ></script>
   </head>
 
-  <body
-   
+ <body style="
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-family: sans-serif;
+">
+
+  <!-- IMAGEN DE FONDO -->
+  <img
+    src="assets/images/final-carcel.jpeg"
+    alt=""
+    style="
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: fit;
+      z-index: -2;
+    "
+  />
+
+  <!-- HEADER SUPERIOR (GAME OVER) -->
+  <div class="game-over"
+    style="
+      width: 100%;
+      background: #e7860d;
+      padding: 20px 0;
+      box-sizing: border-box;
+      z-index: 2;
+      text-align: center;
+    "
+  >
+    <!-- TÍTULO -->
+    <h1
+      style="
+        margin: 0;
+        color: #173668;
+        font-size: 80px;
+        letter-spacing: 2px;
+        font-weight: normal;
+      "
+    >
+      <span>GAME</span> 
+      <span>OVER</span>
+    </h1>
+  </div>
+
+  <!-- CONTENEDOR INFERIOR NARANJA (Se ajusta automáticamente) -->
+  <div
+    style="
+      width: 100%;
+      background: #e7860d;
+      padding: 20px 40px; /* Reducido para que no se vea gigante */
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; /* Alinea verticalmente texto y botones al centro */
+      gap: 40px;
+      z-index: 2;
+      margin-top: auto; /* Empuja este bloque siempre al fondo de la pantalla */
+    "
   >
 
-    <!-- IMAGEN DE FONDO -->
-    <img
-      src="assets/images/final-carcel.jpeg"
-      alt=""
-      style="
-        position:absolute;
-        top:0;
-        left:0;
-        width:100%;
-        height:100%;
-        object-fit:cover;
-        z-index:-2;
-      "
-    />
-
-    <!-- HEADER SUPERIOR -->
-    <div class="game-over"
-      style="
-        position:absolute;
-        top:0;
-        left:0;
-        width:100%;
-        background:#e7860d;
-        padding:28px 0;
-        box-sizing:border-box;
-        z-index:2;
-        text-align:center;
-      "
-    >
-
-      <!-- TÍTULO -->
-      <h1
-        style="
-          margin:0;
-          color:#173668;
-          font-size:80px;
-          letter-spacing:2px;
-          font-weight:normal;
-        "
-      >
-        <span>GAME</span> 
-        <span>OVER</span>
-      </h1>
-
-    </div>
-
-    <!-- SUBTÍTULO NARANJA -->
+    <!-- TEXTO (h3) -->
     <div
       style="
-        position:absolute;
-        bottom:0;
-        left:0;
-        width:100%;
-        background:#e7860d;
-        padding:18px 25px;
-        box-sizing:border-box;
-
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-        gap:30px;
-        z-index:2;
+        max-width: 70%;
+        color: rgb(255, 255, 255);
+        font-size: 22px;
+        line-height: 1.6;
       "
     >
-
-      <!-- TEXTO -->
-      <div
-        style="
-          max-width:80%;
-          color:rgb(255, 255, 255);
-          font-size:22px;
-          line-height:1.8;
-        "
-      >
-      <h3 class="h3">
-        <span> Vas </span> <span>a la </span> <span> cárcel. </span> <span> Hablas más de </span> <span> lo que </span> <span> debías, </span> <span> o eres </span> <span> un total </span> <span>  irrespetuoso. </span>
-       <span> Te </span> <span> desviaste </span> <span> demasiado </span> <span> de la </span> <span> norma. Incunmpliste con la Nueva Constitución del 3010.</span><br>
-       <span> Fuiste </span> <span> advertida </span> <span> de que </span> <span> esto iba </span> <span> a pasar, </span> 
-       <span> y aún </span> <span> así decidiste </span> <span> pasarte </span> <span> de la </span> <span> raya. </span> 
-       <span> Que lástima, </span> <span> habías </span> <span> progresado </span> <span> tanto... </span><br> 
-       <span> Bueno, </span> <span> así es </span> <span> la vida... </span> <br>
-       <span> Esto no </span> <span> es culpa </span> <span> de nadie </span> <span> más que </span> <span> tuya. </span> 
-        </h3>
-      
-      </div>
-
-      <!-- BOTÓN -->
-      <div 
-        style="
-          display:flex;
-          flex-direction:column;
-          padding:100px;
-          gap: 15px;  
-        "
-      >
-
-        <button class="columna-botones"
-          onclick="window.location.href='index.html'"
-          style="
-            background:#173668;
-            color:#e7860d;
-            border:none;
-            padding:8px 18px;
-            font-size:20px;
-            cursor:pointer;
-            border-radius:20px;
-          "
-        >
-          Volver a empezar
-        </button>
-
-        <button class="columna-botones"
-          onclick="window.location.href='interaccion-4.html'"
-          style="
-            background:#173668;
-            color:#e7860d;
-            border:none;
-            padding:8px 18px;
-            font-size:20px;
-            cursor:pointer;
-            border-radius:20px;
-          "
-        >
-          Volver a intentarlo
-        </button>
-        
-      </div>
-
+      <h3 class="h3" style="margin: 0; font-weight: normal;">
+        <span> Vas </span> <span>a la </span> <span> cárcel. </span> <span> Hablas más de </span> <span> lo que </span> <span> debías, </span> <span> o eres </span> <span> un total </span> <span> irrespetuoso. </span>
+        <span> Te </span> <span> desviaste </span> <span> demasiado </span> <span> de la </span> <span> norma. Incumpliste con la Nueva Constitución del 3010.</span>
+        <span> Fuiste </span> <span> advertida </span> <span> de que </span> <span> esto iba </span> <span> a pasar, </span> 
+        <span> y aún </span> <span> así decidiste </span> <span> pasarte </span> <span> de la </span> <span> raya. </span> 
+        <span> Que lástima, </span> <span> habías </span> <span> progresado </span> <span> tanto... </span>
+        <span> Bueno, </span> <span> así es </span> <span> la vida... </span>
+        <span> Esto no </span> <span> es culpa </span> <span> de nadie </span> <span> más que </span> <span> tuya. </span> 
+      </h3>
     </div>
 
-    <!-- AUDIO -->
-    <audio
-      id="audio-home-credits"
-      src="assets/sounds/final-arresto.mp3"
-      preload="auto"
-      autoplay
-      playsinline
-      autoreplay
-    ></audio>
+    <!-- BOTONES -->
+    <div 
+      style="
+        display: flex;
+        flex-direction: column;
+        gap: 15px;  
+        flex-shrink: 0; /* Evita que los botones se deformen si falta espacio */
+      "
+    >
+      <button class="columna-botones"
+        onclick="window.location.href='index.html'"
+        style="
+          background: #173668;
+          color: #e7860d;
+          border: none;
+          padding: 12px 24px;
+          font-size: 18px;
+          cursor: pointer;
+          border-radius: 20px;
+          white-space: nowrap; /* Evita que el texto del botón se parta en dos líneas */
+        "
+      >
+        Volver a empezar
+      </button>
 
-  </body>
-</html>
+      <button class="columna-botones"
+        onclick="window.location.href='interaccion-4.html'"
+        style="
+          background: #173668;
+          color: #e7860d;
+          border: none;
+          padding: 12px 24px;
+          font-size: 18px;
+          cursor: pointer;
+          border-radius: 20px;
+          white-space: nowrap;
+        "
+      >
+        Volver a intentarlo
+      </button>
+    </div>
+
+  </div>
+
+  <!-- AUDIO -->
+  <audio
+    id="audio-home-credits"
+    src="assets/sounds/final-arresto.mp3"
+    preload="auto"
+    autoplay
+    playsinline
+  ></audio>
+
+</body>
